@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do App</title>
+
+  <!-- ---------------- estilos compartilhados entre login e signup ---------------- -->
+  <link rel="stylesheet" href="styles/acesso.css">
+
+  <!-- ---------------------- lógica aplicada no registro -------------------- -->
+  <script src="/scripts/utils.js" defer></script>
+  <script src="/scripts/signup.js" defer></script>
+
+</head>
+
+<body>
+
+  <div class="left">
+    <img src="./assets/ilus-signup.png" alt="">
+  </div>
+  <div class="right">
+    <form>
+      <div class="form-header">
+        <h1>to.do app</h1>
+      </div>
+      <h3>cadastro</h3>
+
+      <label>
+        Nome:
+        <input type="text" id="signupName" class="fields">
+      </label>
+      <label>
+        Sobrenome:
+        <input type="text" id="signupSurname" class="fields">
+      </label>
+      <label>
+        Email:
+        <input type="text" id="signupEmail" class="fields">
+      </label>
+      <label>
+        Senha:
+        <input type="password" id="signupPassword" class="fields">
+      </label>
+      <label>
+        Repetir senha:
+        <input type="password" id="signupRepeatPassword" class="fields">
+      </label>
+
+      <button>Criar conta</button>
+
+    </form>
+    <div class="ingressar">
+      <a class="linkRedirect" href="index.html">Já possui conta? Acesse aqui</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
