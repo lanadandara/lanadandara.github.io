@@ -11,8 +11,8 @@
   <link rel="stylesheet" href="styles/acesso.css">
 
   <!-- ---------------------- lógica aplicada no login ----------------------- -->
-  <script src="/scripts/utils.js" defer></script>
-  <script src="/scripts/index.js" defer></script>
+  <script type="module" src="/scripts/utils.js" defer></script>
+  <script type="module" src="/scripts/index.js" defer></script>
 
 </head>
 
@@ -38,7 +38,14 @@
         <input id="inputPassword" type="password">
       </label>
 
-      <button id="btnSubmit" type="submit">Acessar</button>
+
+      <button type="submit" id="btnSubmit">
+        <div id="loading-container">
+          <div class="loading" hidden></div>
+        </div>Acessar
+      </button>
+
+  
 
     </form>
     <div class="ingressar">

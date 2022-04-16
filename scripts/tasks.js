@@ -1,44 +1,36 @@
-//Validação se a pessoa está realmente logada
 if ((localStorage.getItem('jwt') === null) || (localStorage.getItem('jwt') === '') || (localStorage.getItem('jwt') === undefined)) {
   location.href = 'index.html';
 };
 
+const logout = document.getElementById('closeApp');
 
-//API
-const api = "https://ctd-todo-api.herokuapp.com/v1";
-const route = {
-  users: "/users",
-  login: "/users/login",
-  userInfo: "/users/getMe"
+logout.onclick = () => {
+  localStorage.removeItem('jwt');
+  location.href = 'index.html'
 }
-const url = api + route.userInfo
 
-//variáveis
-const btnEndSession = document.getElementById("closeApp");
+const obterUsuario = (jwt) => {
 
-//func para pegar dados do usuário
-const getUser = (jwt) => {
   fetch("https://ctd-todo-api.herokuapp.com/v1/users/getMe", {
-    method: "GET",
-    headers: {
-      "Content-Type": "application/json",
-      authorization: jwt
-    }
+      headers: {
+          method: 'GET',
+          "Content-type": "application/json",
+          authorization: jwt
+      }
   })
-  .then(function(response){
-    return response.json(); 
-  })
-  .then(function(user){
-    const userName = document.getElementById('userName');
-    userName.innerHTML = `${user.firstName} ${user.lastName}`;
-  })
-}
+      .then((resposta) => resposta.json())
 
-//funcs de mostrar tarefas na tela
+      .then((usuario) => {
+          const userName = document.getElementById('userName');
+          userName.innerHTML = `${usuario.firstName} ${usuario.lastName}`;
+      });
+};
+
 const terminadas = a => {
   const tarefasTerminadas = document.querySelector('.tarefas-terminadas')
   const tarefa = document.createElement('li');
   const notDone = document.createElement('div');
+  const del = document.createElement('div');
   const descricao = document.createElement('div');
   const id = document.createElement('p');
   const p = document.createElement('p');
@@ -57,14 +49,18 @@ const terminadas = a => {
   descricao.appendChild(p2);
   notDone.appendChild(descricao);
   tarefa.appendChild(notDone);
+
   tarefa.appendChild(descricao);
+  tarefa.appendChild(del);
 
   descricao.classList.add("descricao");
   notDone.classList.add("done");
+  del.classList.add("delTask");
   p.classList.add("nome");
   p2.classList.add("timestamp");
   tarefa.classList.add("tarefa");
   id.classList.add('task-id')
+  del.setAttribute('id', a.id)
 
   tarefasTerminadas.prepend(tarefa);
 }
@@ -74,36 +70,41 @@ const naoTerminadas = a => {
   const tarefa = document.createElement('li');
   const notDone = document.createElement('div');
   const descricao = document.createElement('div');
-  const id = document.createElement('p');
+  const del = document.createElement('div');
+  
   const p = document.createElement('p');
   const p2 = document.createElement('p');
   const data = new Date(a.createdAt)
+
+
   const pDescription = document.createTextNode(a.description);
   const pTime = document.createTextNode(data.toLocaleDateString('pt-BR'));
-  const pId = document.createTextNode(a.id);
+
+  
 
   p.appendChild(pDescription);
-  id.appendChild(pId);
+  
   p2.appendChild(pTime);
   descricao.appendChild(p);
   descricao.appendChild(p2);
   notDone.appendChild(descricao);
   tarefa.appendChild(notDone);
-
   tarefa.appendChild(descricao);
+  tarefa.appendChild(del);
 
   descricao.classList.add("descricao");
   notDone.classList.add("not-done");
+  del.classList.add("delTask");
   p.classList.add("nome");
   p2.classList.add("timestamp");
   tarefa.classList.add("tarefa");
   notDone.setAttribute('id', a.id)
+  del.setAttribute('id', a.id)
 
   skeleton.prepend(tarefa);
 }
 
-//func pegar tarefas do usuário
-const getTasks = (jwt) => {
+const obterTasks = (jwt) => {
   fetch('https://ctd-todo-api.herokuapp.com/v1/tasks', {
       headers: {
           method: 'GET',
@@ -111,25 +112,21 @@ const getTasks = (jwt) => {
           authorization: jwt
       }
   })
-  .then((resposta) => resposta.json())
-  .then((tasks) => {
-    tasks.forEach(a => {
-      if (a.completed !== true) {
-        naoTerminadas(a);
-      } else {
-        terminadas(a);
+      .then((resposta) => resposta.json())
+      .then((tasks) => {
+          tasks.forEach(a => {
+              if (a.completed !== true) {
+                  naoTerminadas(a);
+              } else {
+                  terminadas(a);
+              }
+          }
+          )
       }
-    })
-  })
+      )
 }
 
-//func ao carregar a página
-window.onload = (event) => {
-  getUser(localStorage.getItem('jwt'))
-  getTasks(localStorage.getItem('jwt'))
-};
 
-//func criar nova tarefa
 const makeTasks = (jwt) => {
 
   const inpuTask = document.getElementById('novaTarefa')
@@ -151,15 +148,19 @@ const makeTasks = (jwt) => {
       .then(a => {
           naoTerminadas(a)
       })
+  inpuTask.value = '';
 }
 
-const submit = document.getElementById('btn-send');
-submit.onclick = a => {
-    a.preventDefault();
-    makeTasks(localStorage.getItem('jwt'));
-}
+window.addEventListener("click", function (event) {
+  if ((event.target.className === 'not-done') || (event.target.className === 'delTask')) {
+      target = event.target;
+      idElement = target.id
+  }
+  classElement = event.target.className;
+  completeTask(localStorage.getItem('jwt'));
+  delTask(localStorage.getItem('jwt'));
+});
 
-//func marcar tarefa como completada
 var target = ''
 var idElement = ''
 var classElement = ''
@@ -168,44 +169,65 @@ const completeTask = jwt => {
 
   if (classElement === 'not-done') {
 
-        const id = idElement
-        const api = 'https://ctd-todo-api.herokuapp.com/v1/tasks/'
-        const url = api + id;
-        const completed = {
-            completed: true
-        }
+      const id = idElement
+      const api = 'https://ctd-todo-api.herokuapp.com/v1/tasks/'
+      const url = api + id;
+      const completed = {
+          completed: true
+      }
 
-        document.getElementById(idElement).parentElement.remove();
+      document.getElementById(idElement).parentElement.remove();
 
-        fetch(url, {
-            method: 'PUT',
-            headers: {
-                "content-type": "application/json",
-                authorization: jwt
-            },
-            body: JSON.stringify(completed)
-        })
-            .then(function (a) { return a.json() })
-            .then(function (a) {
-                terminadas(a)
+      fetch(url, {
+          method: 'PUT',
+          headers: {
+              "content-type": "application/json",
+              authorization: jwt
+          },
+          body: JSON.stringify(completed)
+      })
+          .then(function (a) { return a.json() })
+          .then(function (a) {
+              terminadas(a)
 
-            });
+          });
 
-    }
-}
-
-window.addEventListener("click", function (event) {
-  if(event.target.className === 'not-done') {  
-    target = event.target;
-    idElement = target.id
-    console.log(idElement)
-    classElement = event.target.className;
-    completeTask(localStorage.getItem('jwt'));
   }
-});
-
-//func finalizar sessão
-btnEndSession.onclick = () => {
-  localStorage.removeItem('jwt');
-  location.href = 'index.html';
 }
+const delTask = (jwt) => {
+
+  if (classElement === 'delTask') {
+
+      const id = idElement
+      const api = 'https://ctd-todo-api.herokuapp.com/v1/tasks/'
+      const url = api + id;
+
+
+      document.getElementById(idElement).parentElement.remove();
+
+      fetch(url, {
+          method: 'DELETE',
+          headers: {
+              "content-type": "application/json",
+              authorization: jwt
+          },
+
+      })
+          .then(function (a) { return a.json() })
+  }
+}
+
+
+
+const submit = document.getElementById('btn-send');
+
+submit.onclick = a => {
+  a.preventDefault();
+  makeTasks(localStorage.getItem('jwt'));
+}
+
+
+window.onload = () => {
+  obterUsuario(localStorage.getItem('jwt'))
+  obterTasks(localStorage.getItem('jwt'))
+};

@@ -114,6 +114,50 @@ button {
   color: red;
 }
 
+/*ANIMAÇÃO*/
+
+.loading {
+  right: 50%;
+  transform: translate(-50, -50);
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: var(--secondary) 4px solid;
+  border-radius: 50%;
+  transition: all 0.5s;
+  animation: loading 0.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    border-top: white 4px solid;
+    transform: rotate(45deg);
+  }
+
+  50% {
+    border-top: white 4px solid;
+    transform: rotate(180deg);
+  }
+
+  100% {
+    border-top: white 4px solid;
+    transform: rotate(360deg);
+  }
+}
+
+.loading-box {
+  font-size: 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-loading {
+  color: var(--secondary);
+  text-align: center;
+  font-size: 2em;
+}
+
 /*RESPONSIVO*/
 @media only screen and (max-width: 755px) {
   .left {

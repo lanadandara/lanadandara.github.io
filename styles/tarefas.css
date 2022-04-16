@@ -156,14 +156,21 @@ nav {
   position: relative;
   height: 1.5em;
   width: 1.5em;
-  background-color: white;
+  background-color: var(--primary);
   border: 2px solid var(--primary);
   z-index: 2;
+  background-image: url(/assets/check.png);
+  background-position: center;
+  background-size: contain;
   transition: background-color 200ms linear;
 }
 
 .tarefa .not-done:hover {
   background-color: var(--secondary);
+  background-image: url("https://cdn-icons-png.flaticon.com/512/190/190411.png");
+  background-position: center;
+  background-size: contain;
+  transform: scale(1.2);
 }
 
 .tarefa:first-child .not-done::before {
@@ -197,6 +204,7 @@ nav {
   padding: 1em 2em;
   border-radius: 10px;
   box-shadow: 2px 2px 5px var(--app-grey);
+  margin-right: 1em;
 }
 
 .tarefa .nome {
@@ -207,6 +215,83 @@ nav {
   font-size: 0.9em;
   color: var(--primary);
 }
+
+.delTask {
+  width: 2em;
+  height: 2em;
+  background-color: var(--app-grey);
+  margin-right: 1em;
+  border-radius: 50%;
+  cursor: pointer;
+  text-align: center;
+  color: grey;
+}
+
+.tarefa .delTask {
+  position: relative;
+  height: 1.5em;
+  width: 1.5em;
+  background-color: #aecec9;
+  background-image: url(/assets/trash.png);
+  background-position: center;
+  background-size: contain;
+  border: 2px solid #aecec9;
+  z-index: 2;
+  transition: background-color 200ms linear;
+}
+
+.tarefa .delTask:hover {
+  background-image: url(/assets/trash-hover.png);
+  background-color: var(--primary);
+  border: 2px solid var(--primary);
+  background-position: center;
+  background-size: contain;
+  transform: scale(1.3);
+}
+
+.tarefa:first-child .not-done::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: calc(0.75em - 1px);
+  display: block;
+  height: 3em;
+  width: 2px;
+  background-color: var(--primary);
+}
+
+/* .tarefa:first-child .delTask::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: calc(0.75em - 1px);
+  display: block;
+  height: 3em;
+  width: 2px;
+  background-color: var(--secondary);
+} */
+
+.tarefa:not(:last-child) .not-done::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: calc(0.75em - 1px);
+  display: block;
+  height: 4.5em;
+  width: 2px;
+  background-color: var(--primary);
+}
+
+/* .tarefa:not(:last-child) .delTask::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: calc(0.75em - 1px);
+  display: block;
+  height: 4.5em;
+  width: 2px;
+  background-color: var(--secondary);
+} */
 
 /* Tarefas terminadas ----------------------------------------------------------- */
 
@@ -251,6 +336,16 @@ nav {
 .tarefas-terminadas .timestamp {
   color: #ffffff;
   text-decoration: line-through;
+}
+
+@keyframes trasparencia {
+  0% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0.8;
+  }
 }
 
 /*RESPONSIVO*/

@@ -1,5 +1,40 @@
-//colocar desabled nos campos quando clicar no botão
-//erro de usuario ja existe
+//variáveis
+const signupForm = document.querySelector("form")
+const signupName = document.getElementById("signupName");
+const signupSurname = document.getElementById("signupSurname");
+const signupEmail = document.getElementById("signupEmail");
+const signupPassword = document.getElementById("signupPassword");
+const signupRepeatPassword = document.getElementById("signupRepeatPassword");
+const signupCreate = document.getElementById('btnCreate');
+const loadingDiv = document.querySelector('.loading');
+const loading = document.getElementById('loading-container');
+var account = '';
+
+
+var animation = () => {
+  loading.classList.add('loading-box')
+  loadingDiv.hidden = '';
+  signupCreate.classList.add('button-loading')
+  signupEmail.setAttribute('disabled', true);
+  signupName.setAttribute('disabled', true);
+  signupSurname.setAttribute('disabled', true);
+  signupRepeatPassword.setAttribute('disabled', true);
+  signupPassword.setAttribute('disabled', true)
+  signupCreate.setAttribute('disabled', true);
+}
+
+var cleanAnimation = () => {
+  loading.classList.remove('loading-box')
+  loadingDiv.hidden = 'hidden';
+  signupCreate.classList.remove('button-loading')
+  signupEmail.removeAttribute('disabled');
+  signupName.removeAttribute('disabled');
+  signupSurname.removeAttribute('disabled');
+  signupRepeatPassword.removeAttribute('disabled');
+  signupPassword.removeAttribute('disabled');
+  signupCreate.removeAttribute('disabled');
+}
+
 
 //API
 const api = "https://ctd-todo-api.herokuapp.com/v1";
@@ -8,17 +43,11 @@ const route = {
   login: "/users/login"
 }
 
-//variáveis
-const signupForm = document.querySelector("form")
-const signupName = document.getElementById("signupName");
-const signupSurname = document.getElementById("signupSurname");
-const signupEmail = document.getElementById("signupEmail");
-const signupPassword = document.getElementById("signupPassword");
-const signupRepeatPassword = document.getElementById("signupRepeatPassword");
-var account = '';
 
 //func cadastro
 const signup = () => {
+  animation();
+
   const data = {
     firstName: signupName.value,
     lastName: signupSurname.value,

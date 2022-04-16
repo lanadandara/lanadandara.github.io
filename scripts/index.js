@@ -1,9 +1,4 @@
-// Normalização:
-// devem finalmente preparar o objeto normalizado em ambos os casos. Exemplo para register: 
 
-
-//mostrar erro de login incorreto
-//no submit mudar de pagina
 
 //API
 const api = "https://ctd-todo-api.herokuapp.com/v1";
@@ -12,6 +7,8 @@ const route = {
   login: "/users/login"
 }
 const url = api + route.login
+
+import { animation, cleanAnimation } from './utils.js'
 
 //variáveis
 const form = document.querySelector("form")
@@ -22,6 +19,8 @@ var account = '';
 
 //func login
 const loginFunc = () => {
+  animation();
+
   const data = {
     email: emailInput.value,
     password: passwordInput.value
