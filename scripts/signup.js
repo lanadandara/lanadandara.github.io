@@ -143,6 +143,11 @@ document.querySelectorAll('.fields').forEach(item => {
 //evento no submit do form
 signupForm.addEventListener('submit', function (event) {
   event.preventDefault();
+  cleanInput(signupName);
+  cleanInput(signupSurname);
+  cleanInput(signupEmail);
+  cleanInput(signupPassword);
+  cleanInput(signupRepeatPassword);
 
   if ((signupName.value !== '') && (signupSurname.value !== '') && (signupEmail.value !== '') && (signupPassword.value !== '') && (signupRepeatPassword.value !== '')) {
     if ((signupPassword.value === signupRepeatPassword.value) && (signupEmail.value.includes('@'))) {

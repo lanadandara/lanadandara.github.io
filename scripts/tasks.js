@@ -8,6 +8,8 @@ if ((localStorage.getItem('jwt') === null) || (localStorage.getItem('jwt') === '
     localStorage.removeItem('jwt');
     location.href = 'index.html'
   }
+
+  const task = document.querySelector('.tasks');
   
   const obterUsuario = (jwt) => {
   
@@ -101,7 +103,7 @@ if ((localStorage.getItem('jwt') === null) || (localStorage.getItem('jwt') === '
     notDone.setAttribute('id', a.id)
     del.setAttribute('id', a.id)
   
-    skeleton.prepend(tarefa);
+    task.prepend(tarefa);
   }
   
   const obterTasks = (jwt) => {
@@ -117,6 +119,10 @@ if ((localStorage.getItem('jwt') === null) || (localStorage.getItem('jwt') === '
             tasks.forEach(a => {
                 if (a.completed !== true) {
                     naoTerminadas(a);
+
+                    task.hidden = '';
+                    const skeleton = document.getElementById('skeleton')
+                    skeleton.hidden = 'hidden'
                 } else {
                     terminadas(a);
                 }
