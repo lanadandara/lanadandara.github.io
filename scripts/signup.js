@@ -5,7 +5,7 @@ const signupSurname = document.getElementById("signupSurname");
 const signupEmail = document.getElementById("signupEmail");
 const signupPassword = document.getElementById("signupPassword");
 const signupRepeatPassword = document.getElementById("signupRepeatPassword");
-const signupCreate = document.getElementById('btnCreate');
+const signupCreate = document.getElementById('btnSubmit');
 const loadingDiv = document.querySelector('.loading');
 const loading = document.getElementById('loading-container');
 var account = '';
@@ -14,6 +14,7 @@ var account = '';
 var animation = () => {
   loading.classList.add('loading-box')
   loadingDiv.hidden = '';
+  signupCreate.removeAttribute('id')
   signupCreate.classList.add('button-loading')
   signupEmail.setAttribute('disabled', true);
   signupName.setAttribute('disabled', true);
@@ -27,6 +28,7 @@ var cleanAnimation = () => {
   loading.classList.remove('loading-box')
   loadingDiv.hidden = 'hidden';
   signupCreate.classList.remove('button-loading')
+  signupCreate.setAttribute('id', 'btnSubmit')
   signupEmail.removeAttribute('disabled');
   signupName.removeAttribute('disabled');
   signupSurname.removeAttribute('disabled');
@@ -53,7 +55,7 @@ const signup = () => {
     lastName: signupSurname.value,
     email: signupEmail.value,
     password: signupPassword.value
-}
+  }
 
   fetch(api + route.users, {
     method: "POST",
@@ -61,15 +63,15 @@ const signup = () => {
       "Content-Type": "application/json"
     },
     body: JSON.stringify(data)
-    
+
   })
-  .then(function(response){
-    return response.json();
-  })
-  .then(function(token){
-  localStorage.setItem('jwt', token.jwt);
-  account = token;
-  })
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (token) {
+      localStorage.setItem('jwt', token.jwt);
+      account = token;
+    })
 };
 
 
@@ -87,7 +89,7 @@ const cleanInput = (a) => {
 
 //validar campos
 const validateInput = (b) => {
-  if (b.value == ""){
+  if (b.value == "") {
     const small = document.createElement('small'); //criou elemento
     const errorMessage = document.createTextNode("Campo obrigatório"); //criou texto
     small.classList.add('error-message'); //adicionar classe para limpar erro ao clicar novamente
@@ -100,7 +102,7 @@ const validateInput = (b) => {
 
 //validar email
 const validateEmail = (c) => {
-  if (!c.value.includes('@')){
+  if (!c.value.includes('@')) {
     const small = document.createElement('small'); //criou elemento
     const errorEmail = document.createTextNode("O email precisa conter @"); //criou texto
     small.classList.add('error-message'); //adicionar classe para limpar erro ao clicar novamente
@@ -111,8 +113,8 @@ const validateEmail = (c) => {
 };
 
 //validar senha
-const validatePassword = (d,e) => {
-  if (d.value !== e.value){
+const validatePassword = (d, e) => {
+  if (d.value !== e.value) {
     const small = document.createElement('small'); //criou elemento
     const errorPassword = document.createTextNode("As senhas não são iguais"); //criou texto
     small.classList.add('error-message'); //adicionar classe para limpar erro ao clicar novamente
@@ -139,27 +141,29 @@ document.querySelectorAll('.fields').forEach(item => {
 
 
 //evento no submit do form
-signupForm.addEventListener('submit', function(event) {
+signupForm.addEventListener('submit', function (event) {
   event.preventDefault();
-  
-  if ((signupName.value !== '') && (signupSurname.value !== '') &&(signupEmail.value !== '') && (signupPassword.value !== '') &&(signupRepeatPassword.value !== '')) {
+
+  if ((signupName.value !== '') && (signupSurname.value !== '') && (signupEmail.value !== '') && (signupPassword.value !== '') && (signupRepeatPassword.value !== '')) {
     if ((signupPassword.value === signupRepeatPassword.value) && (signupEmail.value.includes('@'))) {
       signup();
-      
+
       setTimeout(function () {
+        cleanAnimation();
+
         console.log(account.jwt);
         if (account.jwt != undefined) {
           window.location.href = '/tarefas.html'
         }
-    }, 2000);
-    
+      }, 2000);
+
     } else {
       validateEmail(signupEmail);
-      validatePassword(signupPassword,signupRepeatPassword);
+      validatePassword(signupPassword, signupRepeatPassword);
     }
 
   } else {
-  
+
     validateInput(signupName);
     validateInput(signupSurname);
     validateInput(signupEmail);

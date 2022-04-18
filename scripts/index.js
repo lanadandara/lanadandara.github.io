@@ -46,6 +46,7 @@ const loginFunc = () => {
 //mensagem erro login
 const validateLogin = (errorMessage) => {
   if (errorMessage == "Contraseña incorrecta"){
+    cleanAnimation();
     const small = document.createElement('small'); //criou elemento
     const passwordError = document.createTextNode("Senha incorreta"); //criou texto
     small.classList.add('error-message'); //adicionar classe para limpar erro ao clicar novamente
@@ -53,6 +54,7 @@ const validateLogin = (errorMessage) => {
     passwordInput.classList.add('error'); //adicionou classe error no campo
     passwordInput.after(small); // adicionou o elemento small após o campo
   } else if(errorMessage == "El usuario no existe") {
+    cleanAnimation();
       const small = document.createElement('small'); //criou elemento
       const emailError = document.createTextNode("Email não cadastrado"); //criou texto
       small.classList.add('error-message'); //adicionar classe para limpar erro ao clicar novamente
@@ -60,6 +62,7 @@ const validateLogin = (errorMessage) => {
       emailInput.classList.add('error'); //adicionou classe error no campo
       emailInput.after(small);
   } else if(errorMessage == "Error del servidor") {
+    cleanAnimation();
       const small = document.createElement('small'); //criou elemento
       const serverError = document.createTextNode("Erro ao fazer login. Tente novamente "); //criou texto
       small.classList.add('error-message'); //adicionar classe para limpar erro ao clicar novamente
@@ -71,6 +74,7 @@ const validateLogin = (errorMessage) => {
 
 //limpar erros dos campos
 const cleanInput = (a) => {
+  cleanAnimation();
   if (a.classList.contains('error')) {
     a.classList.remove('error')
     a.nextSibling.remove();
@@ -79,6 +83,7 @@ const cleanInput = (a) => {
 
 //validar campos
 const validateInput = (b) => {
+  cleanAnimation();
   if (b.value == ""){
     //melhor jeito para mostrar mensagem de erro nos campos
     const small = document.createElement('small'); //criou elemento
@@ -118,18 +123,20 @@ form.addEventListener('submit', function(event) {
 
   if ((emailInput.value === '') && (passwordInput.value === '')) {
 
-    
+    cleanAnimation();
     validateInput(emailInput);
     validateInput(passwordInput);
 
 
   } else {
     loginFunc();
+   
     setTimeout(function () {
       if(account.jwt != undefined) {
         window.location.href = "/tarefas.html";
           
       } else {
+        cleanAnimation();
         validateLogin(account);
         }
     }, 2000)

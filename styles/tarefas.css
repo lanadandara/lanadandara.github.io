@@ -369,6 +369,11 @@ nav {
   #closeApp {
     left: 0%;
   }
+
+  .tarefas-pendentes,
+  .tarefas-terminadas {
+    width: 80%;
+  }
 }
 
 /*MOBILE*/
@@ -388,6 +393,6 @@ nav {
 
   .tarefas-pendentes {
     margin: 0.5em 10%;
-    width: 100%;
+    width: 90%;
   }
 }
