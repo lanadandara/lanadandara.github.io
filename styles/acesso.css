@@ -23,7 +23,7 @@ h3 {
 form {
   position: relative;
   max-width: 26em;
-  background-color: white;
+  background-color: var(--bg);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -40,6 +40,7 @@ input {
   border: 1.5px solid var(--primary);
   border-radius: 5px;
   margin: 5px 0 10px;
+  color: var(--primary);
 }
 
 input:focus {
@@ -61,7 +62,7 @@ label {
   padding: 0.5em 3em;
   background-color: var(--primary);
   border: 3px solid var(--primary);
-  color: white;
+  color: var(--bg);
   margin-top: 2em;
   font-weight: 600;
   font-size: 20px;
@@ -71,18 +72,18 @@ label {
 
 #btnSubmit:hover {
   border: 3px solid var(--primary);
-  background-color: #ffffff;
+  background-color: var(--bg);
   color: var(--primary);
 }
 
 .linkRedirect {
   text-decoration: none;
-  color: var(--secondary);
+  color: var(--primary);
 }
 
 .linkRedirect:hover {
   text-decoration: none;
-  color: var(--primary);
+  color: var(--secondary);
 }
 
 /* .form-header {
@@ -106,7 +107,7 @@ label {
 }
 .right {
   width: 50%;
-  background-color: #ffffff;
+  background-color: var(--bg);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,11 +115,11 @@ label {
 }
 
 .error {
-  border: 1.5px solid red;
+  border: 1.5px solid var(--warning);
 }
 
 .error + small {
-  color: red;
+  color: var(--warning);
 }
 
 /*ANIMAÇÃO*/
@@ -167,6 +168,16 @@ label {
   border-radius: 50px;
   color: var(--primary);
   text-align: center;
+}
+
+/*BOTAO DARK MODE*/
+#color-theme {
+  position: fixed;
+  top: 1.5em;
+  left: 1.5em;
+  background-color: var(--primary);
+  color: var(--secondary);
+  font-weight: 600;
 }
 
 /*RESPONSIVO*/

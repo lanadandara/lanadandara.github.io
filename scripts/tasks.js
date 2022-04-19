@@ -9,6 +9,15 @@ if ((localStorage.getItem('jwt') === null) || (localStorage.getItem('jwt') === '
     location.href = 'index.html'
   }
 
+  const btnTheme = document.getElementById("color-theme");
+
+//func dark mode
+btnTheme.addEventListener("click", function () {
+  var appBody = document.body;
+    appBody.classList.toggle("dark-mode");
+  
+});
+
   const task = document.querySelector('.tasks');
   
   const obterUsuario = (jwt) => {

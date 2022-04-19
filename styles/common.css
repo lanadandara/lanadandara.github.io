@@ -4,6 +4,16 @@
   --primary: #135040;
   --secondary: #28aa6e;
   --app-grey: #f4f6f9;
+  --warning: red;
+  --bg: #ffffff;
+}
+
+.dark-mode {
+  --primary: #28aa6e;
+  --secondary: #135040;
+  --app-grey: #2f4251;
+  --warning: #f29d4b;
+  --bg: #213341;
 }
 
 * {
@@ -13,7 +23,7 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: var(--bg);
   min-height: 100vh;
 }
 

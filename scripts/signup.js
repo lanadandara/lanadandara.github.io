@@ -9,7 +9,13 @@ const signupCreate = document.getElementById('btnSubmit');
 const loadingDiv = document.querySelector('.loading');
 const loading = document.getElementById('loading-container');
 var account = '';
+const btnTheme = document.getElementById("color-theme");
 
+//func dark mode
+btnTheme.addEventListener("click", function () {
+  var appBody = document.body;
+  appBody.classList.toggle("dark-mode");
+});
 
 var animation = () => {
   loading.classList.add('loading-box')

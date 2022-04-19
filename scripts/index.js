@@ -16,6 +16,15 @@ const emailInput = document.getElementById("inputEmail");
 const passwordInput = document.getElementById("inputPassword"); 
 const btnAccess = document.querySelector("button")
 var account = '';
+const btnTheme = document.getElementById("color-theme");
+
+//func dark mode
+btnTheme.addEventListener("click", function () {
+  var appBody = document.body;
+    appBody.classList.toggle("dark-mode");
+  
+});
+
 
 //func login
 const loginFunc = () => {

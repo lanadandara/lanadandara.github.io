@@ -18,14 +18,14 @@ a {
   padding: 0.7em 1em;
   border-bottom: 0.5em solid var(--secondary);
   text-decoration: none;
-  color: white;
+  color: var(--bg);
 }
 
 .user-info {
   display: flex;
   align-items: center;
   margin-left: auto;
-  color: rgb(223, 223, 223);
+  color: var(--bg);
 }
 
 .user-info p {
@@ -58,7 +58,7 @@ nav {
   font-weight: 600;
   background-color: var(--secondary);
   border: 1.5px solid var(--secondary);
-  color: white;
+  color: var(--primary);
   border-radius: 50vh;
   padding: 7px 15px;
   cursor: pointer;
@@ -200,7 +200,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   flex: 1;
-  background-color: white;
+  background-color: var(--bg);
   padding: 1em 2em;
   border-radius: 10px;
   box-shadow: 2px 2px 5px var(--app-grey);
@@ -364,6 +364,16 @@ nav {
   100% {
     opacity: 0.8;
   }
+}
+
+/*BOTAO DARK MODE*/
+#color-theme {
+  position: fixed;
+  bottom: 1.5em;
+  right: 1.5em;
+  background-color: var(--app-grey);
+  color: var(--primary);
+  font-weight: 600;
 }
 
 /*RESPONSIVO*/
