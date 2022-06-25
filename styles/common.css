@@ -1,0 +1,21 @@
+:root {
+  --primary: #E84779;
+  --secondary: #F3639F;
+  --text: #172744;
+  --warning: red;
+  --bg: #E9ECEF;
+  --white: #ffffff;
+  --grey: #C0CAD3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Kanit', sans-serif;
+}
+
+body {
+  height: 100%;
+  background: rgb(238,174,202);
+background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}

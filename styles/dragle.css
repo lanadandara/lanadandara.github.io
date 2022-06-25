@@ -1,0 +1,263 @@
+@import url("/styles/common.css");
+
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;600&display=swap');
+
+/*RESET*/
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+
+
+
+
+/*HEADER*/
+header {
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+  
+  align-items: center;
+}
+.buttonsHeader{
+  width: 9%;
+  margin: 0 auto;
+  display: inline-flex;
+}
+
+#icon-information, #icon-stats {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logoHeader {
+  width: 80%;
+  margin: 0 auto;
+  display: inline-flex;
+}
+
+h1 {
+  font-size: 70px;
+  text-align: center;
+  color: var(--white);
+  padding: 0 0 20px;
+  margin: 0 auto;
+}
+
+#help {
+color: var(--white);
+font-size: 16px;
+position: fixed;
+top: 3%;
+right: 10%;
+}
+
+/*GUESS BOX*/
+#formContainer, #resultContainer {
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 30px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+h6 {
+  font-size: 20px;
+  color: var(--text);
+  text-align: center;
+}
+
+#dragName {
+  border: 3px solid var(--text);
+  background-color: var(--white);
+  height: 50px;
+  border-radius: 3px;
+  width: 80%;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+#gussBtn {
+  border: 3px solid var(--text);
+  background-color: var(--primary);
+  height: 50px;
+  border-radius: 3px;
+  width: 19%;
+  margin: 0 0 0 -7px;
+  padding: 0;
+  font-weight: 600;
+  color: var(--white);
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+/*DRAG TAGS*/
+#dragTags {
+  margin: 0 auto;
+  max-width: 55%;
+}
+
+.dragTag {
+  font-size: 17px;
+  color: var(--text);
+  background-color: var(--white);
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-align: center;
+  margin: 15px;
+  display: inline-flex;
+}
+
+/*PAST GUESSES*/
+#pastGuessesContainer {
+  margin: 40px auto;
+  max-width: 55%;
+  border-top: 3px solid var(--text);
+  padding-top: 30px;
+}
+
+.pastGuessBox {
+  width: 100%;
+  background-color: var(--white);
+  padding: 16px;
+  border-radius: 10px;
+  margin: 16px auto;
+}
+
+#guessDrag {
+  font-size: 22px;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.dragStats {
+  display: inline;
+  margin-right: 16px;
+  font-size: 16px;
+}
+
+.hidden {
+  display: none;
+}
+
+#finalAnswer {
+  font-size: 36px;
+  text-align: center;
+  color: var(--text);
+}
+
+/*MODAL*/
+.modal {
+  display: none;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modalContent {
+  background-color: #fefefe;
+  border: 3px solid var(--text);
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  width: 50%; /* Could be more or less, depending on screen size */
+  text-align: center;
+}
+
+h3 {
+  color: var(--primary);
+  font-size: 21px;
+  font-weight: 300;
+}
+
+#answer, #correctAnswer {
+  font-weight: 600;
+  color: var(--text);
+  font-size: 24px;
+  padding: 25px 0;
+}
+
+#shareButton, #shareButtonModal {
+  background-color: var(--primary);
+  padding: 10px 20px;
+  border: 3px solid var(--text);
+  border-radius: 3px;
+  font-size: 20px;
+  color: var(--white);
+  margin: 20px auto;
+  font-weight: 600;
+}
+
+#shareButton:hover, #shareButtonModal:hover {
+  background-color: var(--white);
+  color: var(--primary);
+}
+
+#nextGame {
+  color: var(--text);
+  font-size: 16px;
+  padding: 15px;
+}
+
+#statistics {
+  border-top: 1px solid var(--grey);
+  padding: 30px 0 0;
+  display: flex;
+  text-align: center;
+  align-content: center;
+}
+
+#statisticsContent {
+  padding: 30px 0 0;
+  display: flex;
+  text-align: center;
+  align-content: center;
+}
+
+.statsBox {
+  width: 25%;
+}
+
+.statsText {
+  font-size: 14px;
+  color: var(--text);
+}
+
+.close {
+  color: var(--grey);
+  float: right;
+  font-size: 36px;
+  font-weight: 300;
+  margin-top: -20px;
+  border: none;
+  background-color: var(--white);
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/*RESPONSIVE*/
+
+@media only screen and (max-width: 800px) {
+
+  .modalContent {
+    width: 80%;
+  }
+}
