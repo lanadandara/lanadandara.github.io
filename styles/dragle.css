@@ -59,10 +59,16 @@ right: 10%;
 }
 
 /*GUESS BOX*/
-#formContainer, #resultContainer {
-  max-width: 60%;
+#formContainer {
+  width: 60%;
   margin: 0 auto;
   padding: 30px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#resultContainer {
+  margin: 0 auto;
   vertical-align: middle;
   text-align: center;
 }
@@ -101,7 +107,7 @@ h6 {
 /*DRAG TAGS*/
 #dragTags {
   margin: 0 auto;
-  max-width: 55%;
+  width: 55%;
 }
 
 .dragTag {
@@ -118,7 +124,7 @@ h6 {
 /*PAST GUESSES*/
 #pastGuessesContainer {
   margin: 40px auto;
-  max-width: 55%;
+  width: 55%;
   border-top: 3px solid var(--text);
   padding-top: 30px;
 }
@@ -255,9 +261,32 @@ h3 {
 
 /*RESPONSIVE*/
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
 
-  .modalContent {
+  #dragTags,#pastGuessesContainer {
     width: 80%;
   }
+
+  #formContainer {
+    padding: 0;
+    width: 80%;
+  }
+
+  #resultContainer {
+    width: 100%;
+  }
+
+  #dragName {
+    width: 70%;
+  }
+
+  #gussBtn {
+    width: 29%;
+  }
+
+  .modalContent {
+    width: 85%;
+  }
+
 }
+

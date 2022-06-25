@@ -54,11 +54,11 @@ dragQueens.forEach(function (dragQueen) {
 
 function checkSeason(guess, todaysDrag) {
   if (guess.seasonNumber === todaysDrag.seasonNumber) {
-    seasonComparison = "Season " + guess.seasonNumber + " =";
+    seasonComparison = guess.season + " =";
   } else if (guess.seasonNumber > todaysDrag.seasonNumber) {
-    seasonComparison = "Season " + guess.seasonNumber + " ↓";
+    seasonComparison = guess.season + " ↓";
   } else {
-    seasonComparison = "Season " + guess.seasonNumber + " ↑";
+    seasonComparison = guess.season + " ↑";
   }
   return seasonComparison;
 }
@@ -151,6 +151,7 @@ function resetGameState() {
   window.localStorage.removeItem("dragTags");
   window.localStorage.removeItem("pastGuesses");
   window.localStorage.removeItem("dqotd");
+  window.localStorage.removeItem("gamePlayed");
   window.localStorage.setItem("guessCount", 0);
   chooseDrag();
   //}
@@ -158,6 +159,7 @@ function resetGameState() {
 
 function saveTime() {
   window.localStorage.setItem("lastPlayed", dayPlayed);
+  window.localStorage.setItem("gamePlayed", "yes");
 }
 
 function rightGuess() {
@@ -196,7 +198,6 @@ function rightGuess() {
   } else if (currentGuessNum == 5) {
     copyWin = "Dragle 5/5\n⚫⚫⚫⚫👑;\nPlay here: dragle.fun";
   }
-  console.log(copyWin);
   copyShared = copyWin;
 
   //PUT DRAG NAME ON MODAL
@@ -271,6 +272,13 @@ function loadLocalStorage() {
   if (storedDragQueen) {
     dragOfTheDay = JSON.parse(storedDragQueen);
   }
+
+  let gamePlay = window.localStorage.getItem("gamePlayed");
+  if (gamePlay === "yes") {
+    finalAnswer.innerText = dragOfTheDay.name;
+    form.style.display = "none";
+    resultContainer.classList.remove("hidden");
+  }
 }
 
 function showStats() {
@@ -321,7 +329,7 @@ form.addEventListener("submit", function (event) {
       guessBoard.append(guessCard);
 
       //tags da drag
-      if (matchVal.franchise !== null) {
+      if (matchVal.franchise) {
         franchise.innerText = matchVal.franchise;
         franchise.classList.remove("hidden");
       }
