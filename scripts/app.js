@@ -506,10 +506,3 @@ let closeInfoModal = document.getElementById("closeInfoModal");
 closeInfoModal.onclick = function () {
   infoModal.style.display = "none";
 };
-
-function correctArray() {
-  let new_array = dragQueens.map(function (ele) {
-    return { ...ele, used: 1 };
-  });
-  console.log(new_array);
-}

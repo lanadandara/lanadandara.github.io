@@ -13,8 +13,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Tammie Brown",
     seasonNumber: 1,
@@ -29,8 +29,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Akashia",
     seasonNumber: 1,
@@ -45,8 +45,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Jade",
     seasonNumber: 1,
@@ -61,8 +61,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Ongina",
     seasonNumber: 1,
@@ -77,8 +77,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Shannel",
     seasonNumber: 1,
@@ -93,8 +93,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Rebeca Glasscock",
     seasonNumber: 1,
@@ -109,8 +109,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Nina Flowers",
     seasonNumber: 1,
@@ -125,8 +125,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: true,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "BeBe Zahara Benet",
     seasonNumber: 1,
@@ -141,8 +141,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: true,
+    used: 1,
   },
-
   {
     name: "Shangela",
     seasonNumber: 2,
@@ -157,8 +157,8 @@ let dragQueens = [
     wonSnatchGame: true,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Nicole Paige Brooks",
     seasonNumber: 2,
@@ -173,8 +173,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Mystique Summers Madison",
     seasonNumber: 2,
@@ -189,8 +189,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Kylie Sonique Love",
     seasonNumber: 2,
@@ -205,8 +205,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: true,
+    used: 1,
   },
-
   {
     name: "Morgan McMichaels",
     seasonNumber: 2,
@@ -221,8 +221,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Sahara Davenport",
     seasonNumber: 2,
@@ -237,8 +237,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Jessica Wild",
     seasonNumber: 2,
@@ -253,8 +253,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Pandora Boxx",
     seasonNumber: 2,
@@ -269,8 +269,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: true,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Tatianna",
     seasonNumber: 2,
@@ -285,8 +285,8 @@ let dragQueens = [
     wonSnatchGame: true,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Jujubee",
     seasonNumber: 2,
@@ -301,8 +301,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: true,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Raven",
     seasonNumber: 2,
@@ -317,8 +317,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Tyra Sanchez",
     seasonNumber: 2,
@@ -333,8 +333,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: true,
+    used: 1,
   },
-
   {
     name: "Venus D-Lite",
     seasonNumber: 3,
@@ -349,8 +349,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Phoenix",
     seasonNumber: 3,
@@ -365,8 +365,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Mimi Imfurst",
     seasonNumber: 3,
@@ -381,8 +381,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "India Ferrah",
     seasonNumber: 3,
@@ -397,8 +397,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Mariah Paris Balenciaga",
     seasonNumber: 3,
@@ -413,8 +413,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Stacy Layne Matthews",
     seasonNumber: 3,
@@ -429,8 +429,8 @@ let dragQueens = [
     wonSnatchGame: true,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Delta Work",
     seasonNumber: 3,
@@ -445,8 +445,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Carmen Carrera",
     seasonNumber: 3,
@@ -461,8 +461,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Yara Sofia",
     seasonNumber: 3,
@@ -477,8 +477,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: true,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Alexis Mateo",
     seasonNumber: 3,
@@ -493,8 +493,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Manila Luzon",
     seasonNumber: 3,
@@ -509,8 +509,8 @@ let dragQueens = [
     wonSnatchGame: true,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Raja",
     seasonNumber: 3,
@@ -525,8 +525,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: true,
+    used: 1,
   },
-
   {
     name: "Alisa Summers",
     seasonNumber: 4,
@@ -541,8 +541,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Lashauwn Beyond",
     seasonNumber: 4,
@@ -557,8 +557,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "The Princess",
     seasonNumber: 4,
@@ -573,8 +573,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Madame LaQueer",
     seasonNumber: 4,
@@ -589,8 +589,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Milan",
     seasonNumber: 4,
@@ -605,8 +605,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Jiggly Caliente",
     seasonNumber: 4,
@@ -621,8 +621,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Willam",
     seasonNumber: 4,
@@ -637,8 +637,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "DiDa Ritz",
     seasonNumber: 4,
@@ -653,8 +653,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Kenya Michaels",
     seasonNumber: 4,
@@ -669,8 +669,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Latrice Royale",
     seasonNumber: 4,
@@ -685,8 +685,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: true,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Phi Phi O'Hara",
     seasonNumber: 4,
@@ -701,8 +701,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Chad Michaels",
     seasonNumber: 4,
@@ -717,8 +717,8 @@ let dragQueens = [
     wonSnatchGame: true,
     wonMissCongeniality: false,
     seasonWinner: true,
+    used: 1,
   },
-
   {
     name: "Sharon Needles",
     seasonNumber: 4,
@@ -733,8 +733,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: true,
+    used: 1,
   },
-
   {
     name: "Jinkx Monsoon",
     seasonNumber: 5,
@@ -749,8 +749,8 @@ let dragQueens = [
     wonSnatchGame: true,
     wonMissCongeniality: false,
     seasonWinner: true,
+    used: 1,
   },
-
   {
     name: "Alaska",
     seasonNumber: 5,
@@ -765,8 +765,8 @@ let dragQueens = [
     wonSnatchGame: true,
     wonMissCongeniality: false,
     seasonWinner: true,
+    used: 1,
   },
-
   {
     name: "Roxxxy Andrews",
     seasonNumber: 5,
@@ -781,8 +781,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Detox",
     seasonNumber: 5,
@@ -797,8 +797,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Coco Montrese",
     seasonNumber: 5,
@@ -813,8 +813,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Alyssa Edwards",
     seasonNumber: 5,
@@ -829,8 +829,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Ivy Winters",
     seasonNumber: 5,
@@ -845,8 +845,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: true,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Jade Jolie",
     seasonNumber: 5,
@@ -861,8 +861,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Lineysha Sparx",
     seasonNumber: 5,
@@ -877,8 +877,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Honey Mahogany",
     seasonNumber: 5,
@@ -893,8 +893,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Vivienne Pinay",
     seasonNumber: 5,
@@ -909,8 +909,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Monica Beverly Hillz",
     seasonNumber: 5,
@@ -925,8 +925,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Serena ChaCha",
     seasonNumber: 5,
@@ -941,8 +941,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Penny Tration",
     seasonNumber: 5,
@@ -957,8 +957,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Bianca Del Rio",
     seasonNumber: 6,
@@ -973,8 +973,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: true,
+    used: 1,
   },
-
   {
     name: "Adore Delano",
     seasonNumber: 6,
@@ -989,8 +989,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Courtney Act",
     seasonNumber: 6,
@@ -1005,8 +1005,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Darienne Lake",
     seasonNumber: 6,
@@ -1021,8 +1021,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "BenDeLaCreme",
     seasonNumber: 6,
@@ -1037,8 +1037,8 @@ let dragQueens = [
     wonSnatchGame: true,
     wonMissCongeniality: true,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Joslyn Fox",
     seasonNumber: 6,
@@ -1053,8 +1053,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Trinity K. Bonet",
     seasonNumber: 6,
@@ -1069,8 +1069,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Laganja Estranja",
     seasonNumber: 6,
@@ -1085,8 +1085,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Milk",
     seasonNumber: 6,
@@ -1101,8 +1101,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Gia Gunn",
     seasonNumber: 6,
@@ -1117,8 +1117,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "April Carrión",
     seasonNumber: 6,
@@ -1133,8 +1133,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Vivacious",
     seasonNumber: 6,
@@ -1149,8 +1149,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Kelly Mantle",
     seasonNumber: 6,
@@ -1165,8 +1165,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Magnolia Crawford",
     seasonNumber: 6,
@@ -1181,8 +1181,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Violet Chachki",
     seasonNumber: 7,
@@ -1197,8 +1197,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: true,
+    used: 1,
   },
-
   {
     name: "Ginger Minj",
     seasonNumber: 7,
@@ -1213,8 +1213,8 @@ let dragQueens = [
     wonSnatchGame: true,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Pearl",
     seasonNumber: 7,
@@ -1229,8 +1229,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Kennedy Davenport",
     seasonNumber: 7,
@@ -1245,8 +1245,8 @@ let dragQueens = [
     wonSnatchGame: true,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Katya",
     seasonNumber: 7,
@@ -1261,8 +1261,8 @@ let dragQueens = [
     wonSnatchGame: true,
     wonMissCongeniality: true,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Trixie Mattel",
     seasonNumber: 7,
@@ -1277,8 +1277,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: true,
+    used: 1,
   },
-
   {
     name: "Miss Fame",
     seasonNumber: 7,
@@ -1293,8 +1293,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Jaidynn Diore Fierce",
     seasonNumber: 7,
@@ -1309,8 +1309,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Max",
     seasonNumber: 7,
@@ -1325,8 +1325,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Kandy Ho",
     seasonNumber: 7,
@@ -1341,8 +1341,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Mrs. Kasha Davis",
     seasonNumber: 7,
@@ -1357,8 +1357,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Jasmine Masters",
     seasonNumber: 7,
@@ -1373,8 +1373,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Sasha Belle",
     seasonNumber: 7,
@@ -1389,8 +1389,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Tempest DuJour",
     seasonNumber: 7,
@@ -1400,13 +1400,13 @@ let dragQueens = [
     alternativeQueen: false,
     pageantQueen: false,
     fashionQueen: false,
-    comedyQueen: truef,
+    comedyQueen: true,
     lipsyncAssassin: false,
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Bob the Drag Queen",
     seasonNumber: 8,
@@ -1421,8 +1421,8 @@ let dragQueens = [
     wonSnatchGame: true,
     wonMissCongeniality: false,
     seasonWinner: true,
+    used: 1,
   },
-
   {
     name: "Kim Chi",
     seasonNumber: 8,
@@ -1437,8 +1437,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Naomi Smalls",
     seasonNumber: 8,
@@ -1453,8 +1453,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Chi Chi DeVayne",
     seasonNumber: 8,
@@ -1469,8 +1469,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Derrick Barry",
     seasonNumber: 8,
@@ -1485,8 +1485,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Thorgy Thor",
     seasonNumber: 8,
@@ -1501,8 +1501,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Robbie Turner",
     seasonNumber: 8,
@@ -1517,8 +1517,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Acid Betty",
     seasonNumber: 8,
@@ -1533,8 +1533,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Naysha Lopez",
     seasonNumber: 8,
@@ -1549,8 +1549,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Cynthia Lee Fontaine",
     seasonNumber: 8,
@@ -1565,8 +1565,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: true,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Dax ExclamationPoint",
     seasonNumber: 8,
@@ -1581,8 +1581,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Laila McQueen",
     seasonNumber: 8,
@@ -1597,8 +1597,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Sasha Velour",
     seasonNumber: 9,
@@ -1613,8 +1613,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: true,
+    used: 1,
   },
-
   {
     name: "Peppermint",
     seasonNumber: 9,
@@ -1629,8 +1629,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Shea Couleé",
     seasonNumber: 9,
@@ -1645,8 +1645,8 @@ let dragQueens = [
     wonSnatchGame: true,
     wonMissCongeniality: false,
     seasonWinner: true,
+    used: 1,
   },
-
   {
     name: "Trinity The Tuck",
     seasonNumber: 9,
@@ -1661,8 +1661,8 @@ let dragQueens = [
     wonSnatchGame: true,
     wonMissCongeniality: false,
     seasonWinner: true,
+    used: 1,
   },
-
   {
     name: "Alexis Michelle",
     seasonNumber: 9,
@@ -1677,8 +1677,8 @@ let dragQueens = [
     wonSnatchGame: true,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Nina Bo'nina Brown",
     seasonNumber: 9,
@@ -1693,8 +1693,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Valentina",
     seasonNumber: 9,
@@ -1709,8 +1709,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: true,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Farrah Moan",
     seasonNumber: 9,
@@ -1725,8 +1725,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Aja",
     seasonNumber: 9,
@@ -1741,8 +1741,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Eureka",
     seasonNumber: 9,
@@ -1757,8 +1757,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Charlie Hides",
     seasonNumber: 9,
@@ -1773,8 +1773,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Kimora Blac",
     seasonNumber: 9,
@@ -1789,8 +1789,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Jaymes Mansfield",
     seasonNumber: 9,
@@ -1805,8 +1805,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Natalia Pliacam",
     seasonNumber: 10,
@@ -1821,8 +1821,8 @@ let dragQueens = [
     wonSnatchGame: true,
     wonMissCongeniality: false,
     seasonWinner: true,
+    used: 1,
   },
-
   {
     name: "Année Maywong",
     seasonNumber: 10,
@@ -1837,8 +1837,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Dearis Doll",
     seasonNumber: 10,
@@ -1853,8 +1853,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "B Ella",
     seasonNumber: 10,
@@ -1869,8 +1869,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: true,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Amadiva",
     seasonNumber: 10,
@@ -1885,8 +1885,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "JAJA",
     seasonNumber: 10,
@@ -1901,8 +1901,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Petchra",
     seasonNumber: 10,
@@ -1917,8 +1917,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Morrigan",
     seasonNumber: 10,
@@ -1933,8 +1933,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Bunny Be Fly",
     seasonNumber: 10,
@@ -1949,8 +1949,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Meannie Minaj",
     seasonNumber: 10,
@@ -1965,8 +1965,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Aquaria",
     seasonNumber: 11,
@@ -1981,8 +1981,8 @@ let dragQueens = [
     wonSnatchGame: true,
     wonMissCongeniality: false,
     seasonWinner: true,
+    used: 1,
   },
-
   {
     name: "Kameron Michaels",
     seasonNumber: 11,
@@ -1997,8 +1997,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Asia O'Hara",
     seasonNumber: 11,
@@ -2013,8 +2013,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Miz Cracker",
     seasonNumber: 11,
@@ -2029,8 +2029,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Monét X Change",
     seasonNumber: 11,
@@ -2045,8 +2045,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: true,
     seasonWinner: true,
+    used: 1,
   },
-
   {
     name: "The Vixen",
     seasonNumber: 11,
@@ -2061,8 +2061,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Mo Heart",
     seasonNumber: 11,
@@ -2077,8 +2077,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Blair St. Clair",
     seasonNumber: 11,
@@ -2093,8 +2093,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Mayhem Miller",
     seasonNumber: 11,
@@ -2109,8 +2109,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Dusty Ray Bottoms",
     seasonNumber: 11,
@@ -2125,8 +2125,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Yuhua Hamasaki",
     seasonNumber: 11,
@@ -2141,8 +2141,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Kalorie Karbdashian Williams",
     seasonNumber: 11,
@@ -2157,8 +2157,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Vanessa Vanjie Mateo",
     seasonNumber: 11,
@@ -2173,8 +2173,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Angele Anang",
     seasonNumber: 12,
@@ -2189,8 +2189,8 @@ let dragQueens = [
     wonSnatchGame: true,
     wonMissCongeniality: false,
     seasonWinner: true,
+    used: 1,
   },
-
   {
     name: "Kandy Zyanide",
     seasonNumber: 12,
@@ -2205,8 +2205,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Kana Warrior",
     seasonNumber: 12,
@@ -2221,8 +2221,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Bandit",
     seasonNumber: 12,
@@ -2237,8 +2237,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Vanda Miss Joaquim",
     seasonNumber: 12,
@@ -2253,8 +2253,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Srimala",
     seasonNumber: 12,
@@ -2269,8 +2269,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Tormai",
     seasonNumber: 12,
@@ -2285,8 +2285,8 @@ let dragQueens = [
     wonSnatchGame: true,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Genie",
     seasonNumber: 12,
@@ -2301,8 +2301,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Miss Gimhuay",
     seasonNumber: 12,
@@ -2317,8 +2317,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Mocha Diva",
     seasonNumber: 12,
@@ -2333,8 +2333,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Maya B'Haro",
     seasonNumber: 12,
@@ -2349,8 +2349,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: true,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Katy Killer",
     seasonNumber: 12,
@@ -2365,8 +2365,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Silver Sonic",
     seasonNumber: 12,
@@ -2381,8 +2381,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "M Stranger Fox",
     seasonNumber: 12,
@@ -2397,8 +2397,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Yvie Oddly",
     seasonNumber: 13,
@@ -2413,8 +2413,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: true,
+    used: 1,
   },
-
   {
     name: "Brooke Lynn Hytes",
     seasonNumber: 13,
@@ -2429,8 +2429,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "A'keria C. Davenport",
     seasonNumber: 13,
@@ -2445,8 +2445,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Silky Nutmeg Ganache",
     seasonNumber: 13,
@@ -2461,8 +2461,8 @@ let dragQueens = [
     wonSnatchGame: true,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Nina West",
     seasonNumber: 13,
@@ -2477,8 +2477,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: true,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Shuga Cain",
     seasonNumber: 13,
@@ -2493,8 +2493,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Plastique Tiara",
     seasonNumber: 13,
@@ -2509,8 +2509,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Ra'Jah O'Hara",
     seasonNumber: 13,
@@ -2525,8 +2525,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Scarlet Envy",
     seasonNumber: 13,
@@ -2541,8 +2541,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Ariel Versace",
     seasonNumber: 13,
@@ -2557,8 +2557,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Mercedes Iman Diamond",
     seasonNumber: 13,
@@ -2573,8 +2573,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Honey Davenport",
     seasonNumber: 13,
@@ -2589,8 +2589,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Kahanna Montrese",
     seasonNumber: 13,
@@ -2605,8 +2605,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Soju",
     seasonNumber: 13,
@@ -2621,8 +2621,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "The Vivienne",
     seasonNumber: 14,
@@ -2637,8 +2637,8 @@ let dragQueens = [
     wonSnatchGame: true,
     wonMissCongeniality: false,
     seasonWinner: true,
+    used: 1,
   },
-
   {
     name: "Divina de Campo",
     seasonNumber: 14,
@@ -2653,8 +2653,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Baga Chipz",
     seasonNumber: 14,
@@ -2669,8 +2669,8 @@ let dragQueens = [
     wonSnatchGame: true,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Cheryl Hole",
     seasonNumber: 14,
@@ -2685,8 +2685,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: true,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Blu Hydrangea",
     seasonNumber: 14,
@@ -2701,8 +2701,8 @@ let dragQueens = [
     wonSnatchGame: true,
     wonMissCongeniality: true,
     seasonWinner: true,
+    used: 1,
   },
-
   {
     name: "Crystal",
     seasonNumber: 14,
@@ -2717,8 +2717,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Sum Ting Wong",
     seasonNumber: 14,
@@ -2733,8 +2733,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Vinegar Strokes",
     seasonNumber: 14,
@@ -2749,8 +2749,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Scaredy Kat",
     seasonNumber: 14,
@@ -2765,8 +2765,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Gothy Kendoll",
     seasonNumber: 14,
@@ -2781,8 +2781,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Jaida Essence Hall",
     seasonNumber: 15,
@@ -2797,8 +2797,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: true,
+    used: 1,
   },
-
   {
     name: "Crystal Methyd",
     seasonNumber: 15,
@@ -2813,8 +2813,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Gigi Goode",
     seasonNumber: 15,
@@ -2829,8 +2829,8 @@ let dragQueens = [
     wonSnatchGame: true,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Jackie Cox",
     seasonNumber: 15,
@@ -2845,8 +2845,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Heidi N Closet",
     seasonNumber: 15,
@@ -2861,8 +2861,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: true,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Widow Von'Du",
     seasonNumber: 15,
@@ -2877,8 +2877,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Jan",
     seasonNumber: 15,
@@ -2893,8 +2893,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Brita",
     seasonNumber: 15,
@@ -2909,8 +2909,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Aiden Zhane",
     seasonNumber: 15,
@@ -2925,8 +2925,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Nicky Doll",
     seasonNumber: 15,
@@ -2941,8 +2941,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Rock M. Sakura",
     seasonNumber: 15,
@@ -2957,8 +2957,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Dahlia Sin",
     seasonNumber: 15,
@@ -2973,8 +2973,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Priyanka",
     seasonNumber: 16,
@@ -2989,8 +2989,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: true,
+    used: 1,
   },
-
   {
     name: "Rita Baga",
     seasonNumber: 16,
@@ -3005,8 +3005,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Scarlett BoBo",
     seasonNumber: 16,
@@ -3021,8 +3021,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Jimbo",
     seasonNumber: 16,
@@ -3037,8 +3037,8 @@ let dragQueens = [
     wonSnatchGame: true,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Lemon",
     seasonNumber: 16,
@@ -3053,8 +3053,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Ilona Verley",
     seasonNumber: 16,
@@ -3069,8 +3069,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "BOA",
     seasonNumber: 16,
@@ -3085,8 +3085,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Kiara",
     seasonNumber: 16,
@@ -3101,8 +3101,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Tynomi Banks",
     seasonNumber: 16,
@@ -3117,8 +3117,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: true,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Anastarzia Anaquway",
     seasonNumber: 16,
@@ -3133,8 +3133,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Kyne",
     seasonNumber: 16,
@@ -3149,8 +3149,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Juice Boxx",
     seasonNumber: 16,
@@ -3165,8 +3165,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Envy Peru",
     seasonNumber: 17,
@@ -3181,8 +3181,8 @@ let dragQueens = [
     wonSnatchGame: true,
     wonMissCongeniality: false,
     seasonWinner: true,
+    used: 1,
   },
-
   {
     name: "Janey Jacké",
     seasonNumber: 17,
@@ -3197,8 +3197,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: true,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Ma'MaQueen",
     seasonNumber: 17,
@@ -3213,8 +3213,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: true,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Miss Abby OMG",
     seasonNumber: 17,
@@ -3229,8 +3229,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "ChelseaBoy",
     seasonNumber: 17,
@@ -3245,8 +3245,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Sederginne",
     seasonNumber: 17,
@@ -3261,8 +3261,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Madame Madness",
     seasonNumber: 17,
@@ -3277,8 +3277,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Megan Schoonbrood",
     seasonNumber: 17,
@@ -3293,8 +3293,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Patty Pam-Pam",
     seasonNumber: 17,
@@ -3309,8 +3309,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Roem",
     seasonNumber: 17,
@@ -3325,8 +3325,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Symone",
     seasonNumber: 18,
@@ -3341,8 +3341,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: true,
+    used: 1,
   },
-
   {
     name: "Kandy Muse",
     seasonNumber: 18,
@@ -3357,8 +3357,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Gottmik",
     seasonNumber: 18,
@@ -3373,8 +3373,8 @@ let dragQueens = [
     wonSnatchGame: true,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Rosé",
     seasonNumber: 18,
@@ -3389,8 +3389,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Olivia Lux",
     seasonNumber: 18,
@@ -3405,8 +3405,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Utica Queen",
     seasonNumber: 18,
@@ -3421,8 +3421,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Tina Burner",
     seasonNumber: 18,
@@ -3437,8 +3437,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Denali",
     seasonNumber: 18,
@@ -3453,8 +3453,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Elliott with 2 Ts",
     seasonNumber: 18,
@@ -3469,8 +3469,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "LaLa Ri",
     seasonNumber: 18,
@@ -3485,8 +3485,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: true,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Tamisha Iman",
     seasonNumber: 18,
@@ -3501,8 +3501,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Joey Jay",
     seasonNumber: 18,
@@ -3517,8 +3517,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Kahmora Hall",
     seasonNumber: 18,
@@ -3533,8 +3533,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Lawrence Chaney",
     seasonNumber: 19,
@@ -3549,8 +3549,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: true,
+    used: 1,
   },
-
   {
     name: "Bimini Bon-Boulash",
     seasonNumber: 19,
@@ -3565,8 +3565,8 @@ let dragQueens = [
     wonSnatchGame: true,
     wonMissCongeniality: true,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Tayce",
     seasonNumber: 19,
@@ -3581,8 +3581,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Ellie Diamond",
     seasonNumber: 19,
@@ -3597,8 +3597,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "A'Whora",
     seasonNumber: 19,
@@ -3613,8 +3613,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Sister Sister",
     seasonNumber: 19,
@@ -3629,8 +3629,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Tia Kofi",
     seasonNumber: 19,
@@ -3645,8 +3645,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Joe Black",
     seasonNumber: 19,
@@ -3661,8 +3661,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Veronica Green",
     seasonNumber: 19,
@@ -3677,8 +3677,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Ginny Lemon",
     seasonNumber: 19,
@@ -3693,8 +3693,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Asttina Mandella",
     seasonNumber: 19,
@@ -3709,8 +3709,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Cherry Valentine",
     seasonNumber: 19,
@@ -3725,8 +3725,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Kita Mean",
     seasonNumber: 20,
@@ -3741,8 +3741,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: true,
+    used: 1,
   },
-
   {
     name: "Art Simone",
     seasonNumber: 20,
@@ -3757,8 +3757,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Karen from Finance",
     seasonNumber: 20,
@@ -3773,8 +3773,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Scarlet Adams",
     seasonNumber: 20,
@@ -3789,8 +3789,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Elektra Shock",
     seasonNumber: 20,
@@ -3805,8 +3805,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Maxi Shield",
     seasonNumber: 20,
@@ -3821,8 +3821,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Etcetera Etcetera",
     seasonNumber: 20,
@@ -3837,8 +3837,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Anita Wigl'it",
     seasonNumber: 20,
@@ -3853,8 +3853,8 @@ let dragQueens = [
     wonSnatchGame: true,
     wonMissCongeniality: true,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Coco Jumbo",
     seasonNumber: 20,
@@ -3869,8 +3869,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Jojo Zaho",
     seasonNumber: 20,
@@ -3885,8 +3885,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Carmen Farala",
     seasonNumber: 21,
@@ -3901,8 +3901,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: true,
+    used: 1,
   },
-
   {
     name: "Killer Queen",
     seasonNumber: 21,
@@ -3917,8 +3917,8 @@ let dragQueens = [
     wonSnatchGame: true,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Sagittaria",
     seasonNumber: 21,
@@ -3933,8 +3933,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Pupi Poisson",
     seasonNumber: 21,
@@ -3949,8 +3949,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: true,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Dovima Nurmi",
     seasonNumber: 21,
@@ -3965,8 +3965,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Hugáceo Crujiente",
     seasonNumber: 21,
@@ -3981,8 +3981,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Arantxa Castilla La Mancha",
     seasonNumber: 21,
@@ -3997,8 +3997,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Inti",
     seasonNumber: 21,
@@ -4013,8 +4013,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Drag Vulcano",
     seasonNumber: 21,
@@ -4029,8 +4029,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "The Macarena",
     seasonNumber: 21,
@@ -4045,8 +4045,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Vanessa Van Cartier",
     seasonNumber: 22,
@@ -4061,8 +4061,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: true,
+    used: 1,
   },
-
   {
     name: "My Little Puny",
     seasonNumber: 22,
@@ -4077,8 +4077,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Vivaldi",
     seasonNumber: 22,
@@ -4093,8 +4093,8 @@ let dragQueens = [
     wonSnatchGame: true,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Keta Minaj",
     seasonNumber: 22,
@@ -4109,8 +4109,8 @@ let dragQueens = [
     wonSnatchGame: true,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Tabitha",
     seasonNumber: 22,
@@ -4125,8 +4125,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: true,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "The Countess",
     seasonNumber: 22,
@@ -4141,8 +4141,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Ivy-Elyse",
     seasonNumber: 22,
@@ -4157,8 +4157,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Love Masisi",
     seasonNumber: 22,
@@ -4173,8 +4173,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Reggy B",
     seasonNumber: 22,
@@ -4189,8 +4189,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Juicy Kutoure",
     seasonNumber: 22,
@@ -4205,8 +4205,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Krystal Versace",
     seasonNumber: 23,
@@ -4221,8 +4221,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: true,
+    used: 1,
   },
-
   {
     name: "Ella Vaday",
     seasonNumber: 23,
@@ -4237,8 +4237,8 @@ let dragQueens = [
     wonSnatchGame: true,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Kitty Scott-Claus",
     seasonNumber: 23,
@@ -4253,8 +4253,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Vanity Milan",
     seasonNumber: 23,
@@ -4269,8 +4269,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Scarlett Harlett",
     seasonNumber: 23,
@@ -4285,8 +4285,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Choriza May",
     seasonNumber: 23,
@@ -4301,8 +4301,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "River Medway",
     seasonNumber: 23,
@@ -4317,8 +4317,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Charity Kase",
     seasonNumber: 23,
@@ -4333,8 +4333,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Victoria Scone",
     seasonNumber: 23,
@@ -4349,8 +4349,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Elektra Fence",
     seasonNumber: 23,
@@ -4365,8 +4365,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Anubis",
     seasonNumber: 23,
@@ -4381,8 +4381,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: true,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Icesis Couture",
     seasonNumber: 24,
@@ -4397,8 +4397,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: true,
+    used: 1,
   },
-
   {
     name: "Kendall Gender",
     seasonNumber: 24,
@@ -4413,8 +4413,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Pythia",
     seasonNumber: 24,
@@ -4429,8 +4429,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Gia Metric",
     seasonNumber: 24,
@@ -4445,8 +4445,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Adriana",
     seasonNumber: 24,
@@ -4461,8 +4461,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Kimora Amour",
     seasonNumber: 24,
@@ -4477,8 +4477,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Synthia Kiss",
     seasonNumber: 24,
@@ -4493,8 +4493,8 @@ let dragQueens = [
     wonSnatchGame: true,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Eve 6000",
     seasonNumber: 24,
@@ -4509,8 +4509,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Suki Doll",
     seasonNumber: 24,
@@ -4525,8 +4525,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: true,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Stephanie Prince",
     seasonNumber: 24,
@@ -4541,8 +4541,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Océane Aqua-Black",
     seasonNumber: 24,
@@ -4557,8 +4557,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Beth",
     seasonNumber: 24,
@@ -4573,8 +4573,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Elecktra Bionic",
     seasonNumber: 25,
@@ -4589,8 +4589,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: true,
+    used: 1,
   },
-
   {
     name: "Farida Kant",
     seasonNumber: 25,
@@ -4605,8 +4605,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Le Riche",
     seasonNumber: 25,
@@ -4621,8 +4621,8 @@ let dragQueens = [
     wonSnatchGame: true,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Luquisha Lubamba",
     seasonNumber: 25,
@@ -4637,8 +4637,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: true,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Ava Hangar",
     seasonNumber: 25,
@@ -4653,8 +4653,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Divinity",
     seasonNumber: 25,
@@ -4669,8 +4669,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Enorma Jean",
     seasonNumber: 25,
@@ -4685,8 +4685,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Ivana Vamp",
     seasonNumber: 25,
@@ -4701,8 +4701,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Willow Pill",
     seasonNumber: 26,
@@ -4717,8 +4717,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: true,
+    used: 1,
   },
-
   {
     name: "Lady Camden",
     seasonNumber: 26,
@@ -4733,8 +4733,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Angeria Paris VanMicheals",
     seasonNumber: 26,
@@ -4749,8 +4749,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Bosco",
     seasonNumber: 26,
@@ -4765,8 +4765,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Daya Betty",
     seasonNumber: 26,
@@ -4781,8 +4781,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "DeJa Skye",
     seasonNumber: 26,
@@ -4797,8 +4797,8 @@ let dragQueens = [
     wonSnatchGame: true,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Jorgeous",
     seasonNumber: 26,
@@ -4813,8 +4813,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Jasmine Kennedie",
     seasonNumber: 26,
@@ -4829,8 +4829,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Kerri Colby",
     seasonNumber: 26,
@@ -4845,8 +4845,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Maddy Morphosis",
     seasonNumber: 26,
@@ -4861,8 +4861,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Orion Story",
     seasonNumber: 26,
@@ -4877,8 +4877,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Kornbread 'The Snack' Jeté",
     seasonNumber: 26,
@@ -4893,8 +4893,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: true,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Alyssa Hunter",
     seasonNumber: 26,
@@ -4909,8 +4909,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "June Jambalaya",
     seasonNumber: 26,
@@ -4925,8 +4925,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Pangina Heals",
     seasonNumber: 27,
@@ -4941,8 +4941,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Sharonne",
     seasonNumber: 28,
@@ -4957,8 +4957,8 @@ let dragQueens = [
     wonSnatchGame: true,
     wonMissCongeniality: false,
     seasonWinner: true,
+    used: 1,
   },
-
   {
     name: "Estrella Xtravaganza",
     seasonNumber: 28,
@@ -4973,8 +4973,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Venedita Von Däsh",
     seasonNumber: 28,
@@ -4989,8 +4989,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Marina",
     seasonNumber: 28,
@@ -5005,8 +5005,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Juriji Der Klee",
     seasonNumber: 28,
@@ -5021,8 +5021,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Drag Sethlas",
     seasonNumber: 28,
@@ -5037,8 +5037,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Diamante Merybrown",
     seasonNumber: 28,
@@ -5053,8 +5053,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Onyx",
     seasonNumber: 28,
@@ -5069,8 +5069,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Jota Carajota",
     seasonNumber: 28,
@@ -5085,8 +5085,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Samantha Ballentines",
     seasonNumber: 28,
@@ -5101,8 +5101,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: true,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Ariel Rec",
     seasonNumber: 28,
@@ -5117,8 +5117,8 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
-
   {
     name: "Marisa Prisa",
     seasonNumber: 28,
@@ -5133,6 +5133,7 @@ let dragQueens = [
     wonSnatchGame: false,
     wonMissCongeniality: false,
     seasonWinner: false,
+    used: 1,
   },
 ];
 
