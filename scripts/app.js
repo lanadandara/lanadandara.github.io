@@ -326,7 +326,7 @@ form.addEventListener("submit", function (event) {
         franchise.classList.remove("hidden");
       }
 
-      if (matchVal.season !== null) {
+      if (matchVal.season) {
         season.innerText = matchVal.season;
         season.classList.remove("hidden");
       }
