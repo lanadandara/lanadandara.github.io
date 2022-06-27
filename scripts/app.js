@@ -54,11 +54,11 @@ dragQueens.forEach(function (dragQueen) {
 
 function checkSeason(guess, todaysDrag) {
   if (guess.seasonNumber === todaysDrag.seasonNumber) {
-    seasonComparison = guess.franchise + guess.season + " =";
+    seasonComparison = guess.franchise + " " + guess.season + " =";
   } else if (guess.seasonNumber > todaysDrag.seasonNumber) {
-    seasonComparison = guess.franchise + guess.season + " ↓";
+    seasonComparison = guess.franchise + " " + guess.season + " ↓";
   } else {
-    seasonComparison = guess.franchise + guess.season + " ↑";
+    seasonComparison = guess.franchise + " " + guess.season + " ↑";
   }
   return seasonComparison;
 }
@@ -314,7 +314,7 @@ form.addEventListener("submit", function (event) {
 
   //check number of plays
   let currentGuessCount = window.localStorage.getItem("guessCount") || 0;
-  if (currentGuessCount < 7) {
+  if (currentGuessCount < 8) {
     if (guess.name === dragOfTheDay.name) {
       rightGuess();
     } else {
