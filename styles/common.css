@@ -1,9 +1,9 @@
 :root {
-  --primary: #E84779;
+  --primary: #C379FF;
   --secondary: #F3639F;
-  --text: #172744;
+  --text: #000000;
   --warning: red;
-  --bg: #E9ECEF;
+  --bg: #F7F1EC;
   --white: #ffffff;
   --grey: #C0CAD3;
 }
@@ -16,6 +16,5 @@
 
 body {
   height: 100%;
-  background: rgb(238,174,202);
-background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  background-color: var(--bg);
 }

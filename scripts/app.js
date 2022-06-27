@@ -152,6 +152,7 @@ function resetGameState() {
   window.localStorage.removeItem("pastGuesses");
   window.localStorage.removeItem("dqotd");
   window.localStorage.removeItem("gamePlayed");
+  window.localStorage.removeItem("contentShare");
   window.localStorage.setItem("guessCount", 0);
   chooseDrag();
   //}
@@ -196,7 +197,7 @@ function rightGuess() {
   } else if (currentGuessNum == 4) {
     copyWin = "Dragle 4/8\n❌❌❌👑;\nPlay here: dragle.fun";
   } else if (currentGuessNum == 5) {
-    copyWin = "Dragle 5/8\n❌❌❌❌❌👑;\nPlay here: dragle.fun";
+    copyWin = "Dragle 5/8\n❌❌❌❌👑;\nPlay here: dragle.fun";
   } else if (currentGuessNum == 6) {
     copyWin = "Dragle 6/8\n❌❌❌❌❌👑;\nPlay here: dragle.fun";
   } else if (currentGuessNum == 7) {
@@ -206,6 +207,7 @@ function rightGuess() {
   }
 
   copyShared = copyWin;
+  window.localStorage.setItem("contentShare", copyShared);
 
   //PUT DRAG NAME ON MODAL
   let answerText = document.querySelector("#answer");
@@ -215,14 +217,52 @@ function rightGuess() {
   //OPEN MODAL
   endModal.style.display = "block";
 
-  //show restart button
-  btnStart.style.display = "block";
-
-  console.log("You're a winner baby!");
   //COLOCAR NOME DA QUEEN NA PAGINA
+  let answerSeason = document.querySelector("#answerSeason");
+
   finalAnswer.innerText = dragOfTheDay.name;
   form.style.display = "none";
   resultContainer.classList.remove("hidden");
+  answerSeason.innerText =
+    dragOfTheDay.franchise +
+    " " +
+    dragOfTheDay.season +
+    "  |  " +
+    dragOfTheDay.age +
+    " years";
+
+  //tags da drag na página
+  if (dragOfTheDay.alternativeQueen === true) {
+    alternativeQueen.classList.remove("hidden");
+  }
+
+  if (dragOfTheDay.pageantQueen === true) {
+    pageantQueen.classList.remove("hidden");
+  }
+
+  if (dragOfTheDay.fashionQueen === true) {
+    fashionQueen.classList.remove("hidden");
+  }
+
+  if (dragOfTheDay.comedyQueen === true) {
+    comedyQueen.classList.remove("hidden");
+  }
+
+  if (dragOfTheDay.lipsyncAssassin === true) {
+    lipsyncAssassin.classList.remove("hidden");
+  }
+
+  if (dragOfTheDay.wonSnatchGame === true) {
+    wonSnatchGame.classList.remove("hidden");
+  }
+
+  if (dragOfTheDay.wonMissCongeniality === true) {
+    wonMissCongeniality.classList.remove("hidden");
+  }
+
+  if (dragOfTheDay.seasonWinner === true) {
+    seasonWinner.classList.remove("hidden");
+  }
 }
 
 function wrongGuess() {
@@ -236,6 +276,7 @@ function wrongGuess() {
 
   let copyLost = "Dragle X/8\n❌❌❌❌❌❌❌❌\nPlay here: dragle.fun";
   copyShared = copyLost;
+  window.localStorage.setItem("contentShare", copyShared);
 
   //PUT DRAG NAME ON MODAL
   let answerText = document.querySelector("#answer");
@@ -248,12 +289,52 @@ function wrongGuess() {
   //show restart button
   btnStart.style.display = "block";
 
-  console.log("Sashay away!");
   //COLOCAR NOME DA QUEEN NA PAGINA
+  let answerSeason = document.querySelector("#answerSeason");
 
   finalAnswer.innerText = dragOfTheDay.name;
   form.style.display = "none";
   resultContainer.classList.remove("hidden");
+  answerSeason.innerText =
+    dragOfTheDay.franchise +
+    " " +
+    dragOfTheDay.season +
+    "  |  " +
+    dragOfTheDay.age +
+    " years";
+
+  //tags da drag na página
+  if (dragOfTheDay.alternativeQueen === true) {
+    alternativeQueen.classList.remove("hidden");
+  }
+
+  if (dragOfTheDay.pageantQueen === true) {
+    pageantQueen.classList.remove("hidden");
+  }
+
+  if (dragOfTheDay.fashionQueen === true) {
+    fashionQueen.classList.remove("hidden");
+  }
+
+  if (dragOfTheDay.comedyQueen === true) {
+    comedyQueen.classList.remove("hidden");
+  }
+
+  if (dragOfTheDay.lipsyncAssassin === true) {
+    lipsyncAssassin.classList.remove("hidden");
+  }
+
+  if (dragOfTheDay.wonSnatchGame === true) {
+    wonSnatchGame.classList.remove("hidden");
+  }
+
+  if (dragOfTheDay.wonMissCongeniality === true) {
+    wonMissCongeniality.classList.remove("hidden");
+  }
+
+  if (dragOfTheDay.seasonWinner === true) {
+    seasonWinner.classList.remove("hidden");
+  }
 }
 
 function preserveGameState() {
@@ -286,6 +367,11 @@ function loadLocalStorage() {
     form.style.display = "none";
     resultContainer.classList.remove("hidden");
   }
+
+  let sharedSaved = window.localStorage.getItem("contentShare");
+  if (sharedSaved) {
+    copyShared = sharedSaved;
+  }
 }
 
 function showStats() {
@@ -302,6 +388,7 @@ function showStats() {
   longestStreakNum.innerText = longestStreakCoun || 0;
 }
 
+//button submit
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 
@@ -314,7 +401,7 @@ form.addEventListener("submit", function (event) {
 
   //check number of plays
   let currentGuessCount = window.localStorage.getItem("guessCount") || 0;
-  if (currentGuessCount < 8) {
+  if (currentGuessCount < 7) {
     if (guess.name === dragOfTheDay.name) {
       rightGuess();
     } else {
@@ -521,3 +608,72 @@ let closeInfoModal = document.getElementById("closeInfoModal");
 closeInfoModal.onclick = function () {
   infoModal.style.display = "none";
 };
+
+//countdown timer
+const Countdown = (() => {
+  let nextMidnight = new Date();
+  nextMidnight.setHours(24, 0, 0, 0);
+
+  const getRemainingTime = () => {
+    let now = new Date();
+
+    let time = (nextMidnight.getTime() - now.getTime()) / 1000;
+
+    if (time < 0) {
+      nextMidnight = new Date();
+      nextMidnight.setHours(24, 0, 0, 0);
+
+      return getRemainingTime();
+    }
+
+    return time;
+  };
+
+  const parseTime = (time) => {
+    const hours = Math.floor(time / 3600);
+    let rest = time - hours * 3600;
+    const minutes = Math.floor(rest / 60);
+    rest = rest - minutes * 60;
+    const seconds = Math.floor(rest);
+    const milliseconds = (rest - seconds) * 1000;
+
+    return [hours, minutes, seconds, milliseconds];
+  };
+
+  const formatTime = (parsedTime) => {
+    return (
+      '<span class="hours">' +
+      parsedTime[0] +
+      '</span><span class="hSep">:</span><span class="minutes">' +
+      ("0" + parsedTime[1]).slice(-2) +
+      '</span><span class="mSep">:</span><span class="seconds">' +
+      ("0" + parsedTime[2]).slice(-2) +
+      "</span>"
+    );
+  };
+
+  const els = [];
+  let timeout;
+
+  return (el) => {
+    els.push(el);
+
+    if (!timeout) {
+      const refresh = () => {
+        const parsedTime = parseTime(getRemainingTime());
+        const formattedTimes = formatTime(parsedTime);
+
+        for (let i = 0, iend = els.length; i < iend; i++) {
+          els[i].innerHTML = formattedTimes;
+        }
+
+        setTimeout(() => {
+          refresh();
+        }, parsedTime[3]);
+      };
+      refresh();
+    } else el.innerHTML = formatTime(parseTime(getRemainingTime()));
+  };
+})();
+
+Countdown(document.getElementById("countdown-two"));
