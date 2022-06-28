@@ -14,12 +14,15 @@
 <p>Start typing:</p>
 
 <!--Make sure the form has the autocomplete function switched off:-->
-<form autocomplete="off" action="/action_page.php">
-  <div class="autocomplete" style="width:300px;">
-    <input id="myInput" type="text" name="myCountry" placeholder="Country">
+<form autocomplete="off" action="post" id="dragleForm">
+  <div class="autocomplete">
+    <input type="text" id="dragName" name="fullName" placeholder="Guess the Drag Queen!">
   </div>
-  <input type="submit">
+  <button type="submit" id="gussBtn">Guess</button>
 </form>
+
   <script type="module" src="/test.js"></script>
 </body>
 </html>
+
+
