@@ -1,14 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9VK37BVFCT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9VK37BVFCT');
+</script>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dragle</title>
+  <title>Dragle - The daily Drag Queen guessing game</title>
+  <meta name="description" content="Guess the Drag Queens by their season, age, country and type of drag. New Drag Queen each day!">
+  
+ <!-- para o Twitter Card -->
+  <meta name=”twitter:card” value=”summary”>
+ <!-- para o sistema Open Graph -->
+  <meta property=”og:title” content=”Dragle - The daily Drag Queen guessing game” />
+  <meta property=”og:type” content=”website” />
+  <meta property=”og:url” content=”http://dragle.fun/” />
+  <meta property=”og:image” content=”http://dragle.fun/assets/info.png” />
+  <meta property=”og:description” content="Guess the Drag Queens by their season, age, country and type of drag and share your score with your friends!" />
+    
   <link rel="stylesheet" href="/styles/dragle.css">
 </head>
 <body>
-  
+  <a href="test.html" target="_blank" rel="noopener noreferrer">IR PARA TESTEE</a>
     <div id="page-container">
     <div id="content-wrap">
   
@@ -20,7 +40,7 @@
   
   <div id="formContainer">
     <form action="post" id="dragleForm">
-      <input type="text" list="dragQueens" id="dragName" name="fullName" placeholder="Guess the Drag Queen!">
+      <input type="text" list="dragQueens" id="dragName" name="fullName" autocomplete="off" placeholder="Guess the Drag Queen!">
       <datalist id="dragQueens">
     </datalist>
     <button type="submit" id="gussBtn">Guess</button>
@@ -135,7 +155,7 @@
 
   <footer>
     <p class="footerText">Copyright Dragle 2022</p>
-    <p class="footerText">Enjoying dragle? 🥂<a href="https://www.buymeacoffee.com/dragle" target="_blank" rel="noopener noreferrer">Buy us a mimosa!</a></p>
+    <p class="footerText">Enjoying dragle? 🥂 <a href="https://www.buymeacoffee.com/dragle" target="_blank" rel="noopener noreferrer">Buy us a mimosa!</a></p>
   </footer>
 </div>
 <script type="module" src="/scripts/app.js"></script>
