@@ -39,6 +39,33 @@ let btnShare = document.getElementById("shareButton");
 let btnShareModal = document.getElementById("shareButtonModal");
 
 window.onload = function () {
+  if (window.localStorage.getItem("totalGames") < 1) {
+    infoModal.style.display = "block";
+  }
+
+  if (window.localStorage.getItem("lastPlayed") == undefined) {
+    resetGameState();
+    window.localStorage.setItem("lastPlayed", dayPlayed);
+  }
+
+  const testDayToday = () => {
+    const now = new Date();
+    const start = new Date(now.getFullYear(), 0, 0);
+    const diff = now - start;
+    const oneDay = 1000 * 60 * 60 * 24;
+    return Math.floor(diff / oneDay) - 1;
+  };
+
+  let testDaaaayTodaaay = testDayToday();
+  let dateToday = new Date().toJSON().slice(0, 10);
+  let savedDatePlayed = window.localStorage.getItem("testday");
+  console.log(testDaaaayTodaaay);
+  console.log(savedDatePlayed);
+
+  if (testDaaaayTodaaay != savedDatePlayed) {
+    resetGameState();
+    //location.reload();
+  }
   loadLocalStorage();
 };
 //array of objects of queens
@@ -109,45 +136,25 @@ function checkDrag(guess, todaysDrag) {
 function updateTotalGames() {
   let totalGames = window.localStorage.getItem("totalGames") || 0;
   window.localStorage.setItem("totalGames", Number(totalGames) + 1);
-
-  let restoreIndex = window.localStorage.getItem("indodq");
-  console.log(dragQueens[restoreIndex]);
-
-  if (dragQueens[restoreIndex].used === 1) {
-    dragQueens[restoreIndex].used = 2;
-    console.log(dragQueens[restoreIndex]);
-  }
 }
 
 function chooseDrag() {
-  //daily picking of a drag
-  let chooseQueen = dragQueens[Math.floor(Math.random() * dragQueens.length)];
-  if (chooseQueen.used === 1) {
-    //chooseQueen.used = true;
-    dragOfTheDay = chooseQueen;
-    window.localStorage.setItem("dqotd", JSON.stringify(dragOfTheDay));
-    console.log(dragOfTheDay);
-    let dragNameToSearch = dragOfTheDay.name;
-    console.log(dragNameToSearch);
-
-    saveIndex = dragQueens
-      .map(function (obj) {
-        return obj.name;
-      })
-      .indexOf(dragNameToSearch);
-
-    window.localStorage.setItem("indodq", Number(saveIndex));
-  } else {
-    chooseDrag();
-  }
+  //escolha correta das drags 1 vez ao dia
+  const getDayOfYear = () => {
+    const now = new Date();
+    const start = new Date(now.getFullYear(), 0, 0);
+    const diff = now - start;
+    const oneDay = 1000 * 60 * 60 * 24;
+    return Math.floor(diff / oneDay) - 1;
+  };
+  dragOfTheDay = dragQueens[getDayOfYear()];
+  let testDay = getDayOfYear();
+  window.localStorage.setItem("dqotd", JSON.stringify(dragOfTheDay));
+  window.localStorage.setItem("testday", testDay);
+  console.log(dragOfTheDay);
 }
 
 function resetGameState() {
-  let dateToday = new Date().toJSON().slice(0, 10);
-  console.log(dateToday);
-  console.log(dayPlayed);
-
-  //if (dateToday !== dayPlayed) {
   window.localStorage.removeItem("dragTags");
   window.localStorage.removeItem("pastGuesses");
   window.localStorage.removeItem("dqotd");
@@ -155,7 +162,6 @@ function resetGameState() {
   window.localStorage.removeItem("contentShare");
   window.localStorage.setItem("guessCount", 0);
   chooseDrag();
-  //}
 }
 
 function saveTime() {
@@ -189,21 +195,21 @@ function rightGuess() {
   let currentGuessNum = JSON.parse(nuberOfGuesses) + 1;
 
   if (currentGuessNum == 1) {
-    copyWin = "Dragle 1/8\n👑;\nPlay here: dragle.fun";
+    copyWin = "Dragle 1/8\n👑;\nPlay here: https://dragle.fun/";
   } else if (currentGuessNum == 2) {
-    copyWin = "Dragle 2/8\n❌👑;\nPlay here: dragle.fun";
+    copyWin = "Dragle 2/8\n❌👑;\nPlay here: https://dragle.fun/";
   } else if (currentGuessNum == 3) {
-    copyWin = "Dragle 3/8\n❌❌👑;\nPlay here: dragle.fun";
+    copyWin = "Dragle 3/8\n❌❌👑;\nPlay here: https://dragle.fun/";
   } else if (currentGuessNum == 4) {
-    copyWin = "Dragle 4/8\n❌❌❌👑;\nPlay here: dragle.fun";
+    copyWin = "Dragle 4/8\n❌❌❌👑;\nPlay here: https://dragle.fun/";
   } else if (currentGuessNum == 5) {
-    copyWin = "Dragle 5/8\n❌❌❌❌👑;\nPlay here: dragle.fun";
+    copyWin = "Dragle 5/8\n❌❌❌❌👑;\nPlay here: https://dragle.fun/";
   } else if (currentGuessNum == 6) {
-    copyWin = "Dragle 6/8\n❌❌❌❌❌👑;\nPlay here: dragle.fun";
+    copyWin = "Dragle 6/8\n❌❌❌❌❌👑;\nPlay here: https://dragle.fun/";
   } else if (currentGuessNum == 7) {
-    copyWin = "Dragle 7/8\n❌❌❌❌❌❌👑;\nPlay here: dragle.fun";
+    copyWin = "Dragle 7/8\n❌❌❌❌❌❌👑;\nPlay here: https://dragle.fun/";
   } else if (currentGuessNum == 8) {
-    copyWin = "Dragle 8/8\n❌❌❌❌❌❌❌👑;\nPlay here: dragle.fun";
+    copyWin = "Dragle 8/8\n❌❌❌❌❌❌❌👑;\nPlay here: https://dragle.fun/";
   }
 
   copyShared = copyWin;
@@ -274,7 +280,7 @@ function wrongGuess() {
   //save time
   saveTime();
 
-  let copyLost = "Dragle X/8\n❌❌❌❌❌❌❌❌\nPlay here: dragle.fun";
+  let copyLost = "Dragle X/8\n❌❌❌❌❌❌❌❌\nPlay here: https://dragle.fun/";
   copyShared = copyLost;
   window.localStorage.setItem("contentShare", copyShared);
 
@@ -472,7 +478,7 @@ form.addEventListener("submit", function (event) {
     //reset form
     form.reset();
   } else {
-    if (guess === dragOfTheDay) {
+    if (guess.name === dragOfTheDay.name) {
       rightGuess();
     } else {
       checkDrag(guess, dragOfTheDay);
@@ -543,10 +549,10 @@ form.addEventListener("submit", function (event) {
 });
 
 //restart game
-btnStart.onclick = function () {
-  resetGameState();
-  location.reload();
-};
+//btnStart.onclick = function () {
+//resetGameState();
+//location.reload();
+//};
 
 //close modal window
 closeModal.onclick = function () {
@@ -555,15 +561,48 @@ closeModal.onclick = function () {
 
 //share button
 btnShare.addEventListener("click", (event) => {
-  console.log(copyShared);
-  navigator.clipboard.writeText(copyShared);
+  if (navigator.share) {
+    navigator
+      .share({
+        title: "Dragle",
+        url: "https://dragle.fun",
+        text: copyShared,
+      })
+      .then(() => {
+        console.log("Thanks for sharing!");
+      })
+      .catch(console.error);
+  } else {
+    console.log(copyShared);
+    navigator.clipboard.writeText(copyShared);
+    btnShare.innerText = "Copied";
+    setTimeout(() => {
+      btnShare.innerText = "Share results";
+    }, 2000); // 👈️ delay in milliseconds
+  }
 });
 
 //share button modal
-
 btnShareModal.addEventListener("click", (event) => {
-  console.log(copyShared);
-  navigator.clipboard.writeText(copyShared);
+  if (navigator.share) {
+    navigator
+      .share({
+        title: "Dragle",
+        url: "https://dragle.fun",
+        text: copyShared,
+      })
+      .then(() => {
+        console.log("Thanks for sharing!");
+      })
+      .catch(console.error);
+  } else {
+    console.log(copyShared);
+    navigator.clipboard.writeText(copyShared);
+    btnShare.innerText = "Copied";
+    setTimeout(() => {
+      btnShare.innerText = "Share results";
+    }, 2000); // 👈️ delay in milliseconds
+  }
 });
 
 //open stats modal
@@ -784,7 +823,7 @@ function autocomplete(inp, arr) {
 
 /*An array containing all the drag names*/
 let dragNamesList = [
-  "Victoria 'Porkchop' Parker",
+  "Victoria Porkchop Parker",
   "Tammie Brown",
   "Akashia",
   "Jade",
@@ -827,7 +866,7 @@ let dragNamesList = [
   "DiDa Ritz",
   "Kenya Michaels",
   "Latrice Royale",
-  "Phi Phi O'Hara",
+  "Phi Phi OHara",
   "Chad Michaels",
   "Sharon Needles",
   "Jinkx Monsoon",
@@ -889,7 +928,7 @@ let dragNamesList = [
   "Shea Couleé",
   "Trinity The Tuck",
   "Alexis Michelle",
-  "Nina Bo'nina Brown",
+  "Nina Bonina Brown",
   "Valentina",
   "Farrah Moan",
   "Aja",
@@ -909,7 +948,7 @@ let dragNamesList = [
   "Meannie Minaj",
   "Aquaria",
   "Kameron Michaels",
-  "Asia O'Hara",
+  "Asia OHara",
   "Miz Cracker",
   "Monét X Change",
   "The Vixen",
@@ -930,18 +969,18 @@ let dragNamesList = [
   "Genie",
   "Miss Gimhuay",
   "Mocha Diva",
-  "Maya B'Haro",
+  "Maya BHaro",
   "Katy Killer",
   "Silver Sonic",
   "M Stranger Fox",
   "Yvie Oddly",
   "Brooke Lynn Hytes",
-  "A'keria C. Davenport",
+  "Akeria C. Davenport",
   "Silky Nutmeg Ganache",
   "Nina West",
   "Shuga Cain",
   "Plastique Tiara",
-  "Ra'Jah O'Hara",
+  "RaJah OHara",
   "Scarlet Envy",
   "Ariel Versace",
   "Mercedes Iman Diamond",
@@ -963,7 +1002,7 @@ let dragNamesList = [
   "Gigi Goode",
   "Jackie Cox",
   "Heidi N Closet",
-  "Widow Von'Du",
+  "Widow VonDu",
   "Jan",
   "Brita",
   "Aiden Zhane",
@@ -984,7 +1023,7 @@ let dragNamesList = [
   "Juice Boxx",
   "Envy Peru",
   "Janey Jacké",
-  "Ma'MaQueen",
+  "MaMaQueen",
   "Miss Abby OMG",
   "ChelseaBoy",
   "Sederginne",
@@ -1009,7 +1048,7 @@ let dragNamesList = [
   "Bimini Bon-Boulash",
   "Tayce",
   "Ellie Diamond",
-  "A'Whora",
+  "AWhora",
   "Sister Sister",
   "Tia Kofi",
   "Joe Black",
@@ -1024,7 +1063,7 @@ let dragNamesList = [
   "Elektra Shock",
   "Maxi Shield",
   "Etcetera Etcetera",
-  "Anita Wigl'it",
+  "Anita Wiglit",
   "Coco Jumbo",
   "Jojo Zaho",
   "Carmen Farala",
@@ -1089,7 +1128,7 @@ let dragNamesList = [
   "Kerri Colby",
   "Maddy Morphosis",
   "Orion Story",
-  "Kornbread 'The Snack' Jeté",
+  "Kornbread The Snack Jeté",
   "Alyssa Hunter",
   "June Jambalaya",
   "Pangina Heals",
