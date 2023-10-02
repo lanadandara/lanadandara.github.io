@@ -1,0 +1,49 @@
+@import url("/styles/common.css");
+
+#about {
+  display: flex;
+  padding: 20% 0;
+}
+
+#about-img, #about-text {
+  width: 50%;
+  display: block;
+}
+
+#about-title {
+  color: var(--blue);
+  font-size: 40px;
+  font-weight: 400;
+}
+
+#about-subtitle {
+  color: var(--pink);
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 115%;
+  padding-bottom: 15px;
+}
+
+.about-text {
+  color: var(--text);
+  font-size: 16px;
+  line-height: 135%;
+  padding-bottom: 40px;
+}
+
+.resume-button {
+  padding: 10px 20px;
+  background-color: var(--blue);
+  border: solid 4px var(--blue);
+  border-radius: 50px;
+  color: var(--white);
+  font-weight: 800;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.resume-button:hover {
+  background-color: var(--white);
+  color: var(--blue);
+}
