@@ -47,3 +47,35 @@
   background-color: var(--white);
   color: var(--blue);
 }
+
+/*RESPONSIVE*/
+
+@media (max-width:900px) {
+  #about{
+    padding: 20% 5%;
+  }
+}
+
+@media (max-width:750px) {
+  #about {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  #about-img, #about-text {
+    width: 100%;
+  }
+}
+
+@media (max-width:500px) {
+  #about-title{
+    font-size: 28px;
+  }
+
+  .resume-button {
+    font-size: 16px;
+  }
+}
+
+
