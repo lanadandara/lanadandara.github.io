@@ -39,6 +39,14 @@ body > header {
   text-align: center;
 }
 
+.darkBlue {
+  color: var(--darkblue);
+}
+
+.bulletpoint {
+  line-height: 170% !important;
+}
+
 .work-subtitle {
   font-weight: 800;
   font-size: 20px;
@@ -87,6 +95,11 @@ body > header {
 
 
 /*CONTENT*/
+
+
+.centerImg {
+  text-align: center;
+}
 
 .full-text {
   max-width: 700px;

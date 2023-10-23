@@ -48,6 +48,16 @@
   color: var(--blue);
 }
 
+.aboutImgDesk {
+  display: block;
+  width: 85%;
+  
+}
+
+.aboutImgMob {
+  display: none;
+}
+
 /*RESPONSIVE*/
 
 @media (max-width:900px) {
@@ -66,6 +76,17 @@
   #about-img, #about-text {
     width: 100%;
   }
+
+  .aboutImgDesk {
+    display: none;
+  }
+  
+  .aboutImgMob {
+    display: block;
+    margin: 0 auto 30px auto;
+    width: 50%;
+    
+  }
 }
 
 @media (max-width:500px) {
@@ -75,6 +96,13 @@
 
   .resume-button {
     font-size: 16px;
+  }
+
+  .aboutImgMob {
+    display: block;
+    margin: 0 auto 30px auto;
+    width: 80%;
+    
   }
 }
 
