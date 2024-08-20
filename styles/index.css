@@ -1,5 +1,9 @@
 @import url("/styles/common.css");
 
+.accent {
+  color: var(--accent) !important;
+}
+
 #presentation {
   padding: 15% 0;
   max-width: 580px;
@@ -8,7 +12,7 @@
 
 .presentation-title {
   font-size: 96px;
-  color: var(--blue);
+  color: var(--secondary);
   text-align: center;
   font-weight: 400;
   line-height: 100%;
@@ -16,7 +20,7 @@
 
 #presentation-subtitle {
   font-size: 24px;
-  color: var(--text);
+  color: var(--secondary);
   line-height: 115%;
   text-align: center;
   font-weight: 400;
@@ -37,7 +41,7 @@
 
 .work-card:hover{
   transform: scale(1.05);
-  box-shadow: 5px 5px 20px 0px rgba(73,100,243,0.35);
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0,0.06);
   cursor: pointer;
 }
 
@@ -64,7 +68,7 @@
 }
 
 .wc-title {
-  color: var(--text);
+  color: var(--secondary);
   font-size: 36px;
   font-weight: 800;
   line-height: 115%;
@@ -72,7 +76,7 @@
 }
 
 .wc-text {
-  color: var(--text);
+  color: var(--secondary);
   font-size: 16px;
   font-weight: 400;
   line-height: 135%;
@@ -80,11 +84,11 @@
 }
 
 .wc-tags {
-  color: var(--white);
+  color: var(--secondary);
   font-size: 11px;
   font-weight: 800;
   padding: 10px 15px;
-  background-color: var(--pink);
+  background-color: var(--accent);
   border-radius: 50px;
   text-align: center;
   display: inline-flex;

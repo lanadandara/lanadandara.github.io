@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
 
 :root {
-  --pink: #F651B7;
-  --blue: #4964F3;
+  --primary: #00BCD4;
+  --secondary: #2F3E46;
   --darkblue: #00308F;
+  --accent: #FFD700;
   --grey: #f2f2f2;
   --text: #222222;
   --white: #ffffff;
@@ -57,25 +58,26 @@ nav {
 }
 
 .nav-list a {
-  color: var(--blue);
+  color: var(--secondary);
   text-decoration: none;
 }
 
 #contact-button {
-  color: var(--blue);
+  color: var(--secondary);
 }
 
 
 
 .nav-list a:hover,
 .nav-list a:focus, #contact-button:hover {
-  color: var(--pink);
+  color: var(--accent);
+  text-decoration: overline;
   font-weight: 800;
   cursor: pointer;
 }
 
 .active {
-  color: var(--pink) !important;
+  color: var(--primary) !important;
   font-weight: 800;
 }
 
@@ -85,7 +87,7 @@ nav {
   right: 20px;*/
   float: right;
   outline: none;
-  color: var(--blue);
+  color: var(--secondary);
   background-color: var(--white);
   border: none;
   font-size: 16px;
@@ -95,7 +97,7 @@ nav {
 
 /*FOOTER*/
 footer {
-  background-color: var(--pink);
+  background-color: var(--primary);
   padding-top: 120px;
 }
 
@@ -111,29 +113,29 @@ footer {
 }
 
 #ft-text {
-  color: var(--darkblue);
+  color: var(--secondary);
   font-size: 36px;
   line-height: 115%;
 }
 
 .contact-title {
   font-size: 16px;
-  color: var(--darkblue);
+  color: var(--white);
   font-weight: 800;
   padding-top: 30px;
 }
 .contact-text {
   font-size: 18px;
-  color: var(--white);
+  color: var(--secondary);
   text-decoration: none;
 }
 
 .contact-text:hover{
-  color: var(--darkblue);
+  text-decoration: underline;
 }
 
 #contact {
-  color: var(--darkblue);
+  color: var(--secondary);
   font-size: 16px;
   padding: 100px 0 20px 0;
   text-align: right;

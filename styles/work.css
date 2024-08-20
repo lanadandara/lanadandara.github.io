@@ -1,7 +1,7 @@
 @import url("/styles/common.css");
 
 body > header {
-  background-color: var(--blue) !important;
+  background-color: var(--primary) !important;
 }
 
 .nav-list a {
@@ -13,18 +13,19 @@ body > header {
 
 .nav-list a:hover,
 .nav-list a:focus, #contact-button:hover {
-  color: var(--pink);
+  color: var(--secondary);
   font-weight: 800;
+  text-decoration: overline;
 }
 
 
 
-.pink {
-  color: var(--pink);
+.primary {
+  color: var(--primary);
 }
 
 .blue {
-  color: var(--blue);
+  color: var(--secondary);
 }
 
 .white {
@@ -32,7 +33,7 @@ body > header {
 }
 
 .grey {
-  color: var(--text);
+  color: var(--secondary);
 }
 
 .center {
@@ -40,7 +41,7 @@ body > header {
 }
 
 .darkBlue {
-  color: var(--darkblue);
+  color: var(--secondary);
 }
 
 .bulletpoint {
@@ -69,7 +70,7 @@ body > header {
 /*HEADER*/
 
 .case-header {
-  background-color: var(--blue);
+  background-color: var(--primary);
   padding: 10% 0 5% 0;
 }
 
@@ -168,7 +169,7 @@ body > header {
 }
 
 figcaption {
-  color: var(--pink);
+  color: var(--primary);
   text-align: center;
 }
 
@@ -183,7 +184,7 @@ figcaption {
 /*BACK TO TOP*/
 #back-to-top {
   padding: 20px;
-  background-color: var(--blue);
+  background-color: var(--secondary);
   text-align: center;
 }
 
@@ -200,7 +201,8 @@ figcaption {
 }
 
 #scrollToTopText:hover {
-  color: var(--darkblue);
+  color: var(--accent);
+  text-decoration: underline;
 }
 
 

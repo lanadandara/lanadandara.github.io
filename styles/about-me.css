@@ -11,13 +11,13 @@
 }
 
 #about-title {
-  color: var(--blue);
+  color: var(--secondary);
   font-size: 40px;
   font-weight: 400;
 }
 
 #about-subtitle {
-  color: var(--pink);
+  color: var(--primary);
   font-weight: 800;
   font-size: 16px;
   line-height: 115%;
@@ -25,7 +25,7 @@
 }
 
 .about-text {
-  color: var(--text);
+  color: var(--secondary);
   font-size: 16px;
   line-height: 135%;
   padding-bottom: 40px;
@@ -33,10 +33,9 @@
 
 .resume-button {
   padding: 10px 20px;
-  background-color: var(--blue);
-  border: solid 4px var(--blue);
+  background-color: var(--accent);
   border-radius: 50px;
-  color: var(--white);
+  color: var(--secondary);
   font-weight: 800;
   font-size: 20px;
   text-align: center;
@@ -44,8 +43,8 @@
 }
 
 .resume-button:hover {
-  background-color: var(--white);
-  color: var(--blue);
+  background-color: var(--primary);
+  color: var(--white);
 }
 
 .aboutImgDesk {
