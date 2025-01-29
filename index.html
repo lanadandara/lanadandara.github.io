@@ -21,11 +21,11 @@
   <header>
     <nav>
       <div class="container">
-        <a href="/index.html"><img class="logo" src="/assets/logo.png" alt="Lana Dandara"></a>
+        <a href="/index.html" id="logo-text">Lana Dandara</a>
         <ul class="nav-list">
-          <li><a href="/index.html" class="active">work*</a></li>
-          <li><a href="/about-me.html" class="">about me</a></li>
-          <li id="contact-button">contact</li>
+          <li><a href="/index.html" class="active">Work</a></li>
+          <li><a href="/about-me.html" class="">About me</a></li>
+          <li id="contact-button">Contact</li>
         </ul>
       </div>
     </nav>
@@ -33,71 +33,50 @@
   <main>
     <div class="container">
       <div id="presentation">
-        <h1 class="presentation-title">hello there!</h1>
-        <h1 class="presentation-title accent"><b>I'm Lana</b></h1>
-        <h3 id="presentation-subtitle">A Brazilian Product Designer with 7+ years of experience designing mobile and web products for 15+ companies</h3>
+        <div id="pre-half-text">
+          <h1 class="presentation-title fade-in">Hi, I'm Lana</h1>
+          <h3 id="presentation-subtitle">A Brazilian Product Designer with 7+ years of experience designing mobile and web products for 15+ companies</h3>
+        </div>
+        <div id="pre-half-none">
+          <p class="presentation-text">Scroll to explore</p>
+        </div>
+        
       </div>
       <div id="work">
-        <div id="card-store-management" class="work-card">
-          <div class="card-text">
-            <div class="card-container">
-              <h2 class="wc-title">All-in-One Hub: Simplified Store Management</h2>
-              <p class="wc-text">Franchisee-centric all-in-one store management</p>
-              <div class="caseTags">
-                <p class="wc-tags">Responsive</p>
-                <p class="wc-tags">Stakeholder Interviews</p>
-                <p class="wc-tags">Information Architecture</p>
-              </div>
-            </div>
-          </div>
-          <div class="card-img">
-            <img class="home-imag-card" src="/assets/home-card-1.png" alt="computer screen with web platform">
-          </div>
+       <div class="work-line">
+        <div class="work-column" id="card-store-management">
+          <img class="work-img" src="/assets/thumb-bio.png" alt="computer screen with web platform">
+          <h3 class="work-titles"><a class="work-links" href="/digital-wallet.html">User validation →</a></h3>
         </div>
-        <div id="card-digital-wallet" class="work-card">
-          <div class="card-text">
-            <div class="card-container">
-              <h2 class="wc-title">Unlocking Benefits: Our Digital Wallet Experience</h2>
-              <p class="wc-text">Maximizing convenience, promotions, and benefits through digital wallet.</p>
-              <div class="caseTags">
-                <p class="wc-tags">Mobile</p>
-                <p class="wc-tags">Usability Testing</p>
-                <p class="wc-tags">User Behavior Analysis</p>
-              </div>
-            </div>
-          </div>
-          <div class="card-img">
-            <img class="home-imag-card" src="/assets/home-card-2.png" alt="iphone screens with application">
-          </div>
+        <div class="work-column" id="card-digital-wallet">
+          <img class="work-img" src="/assets/thumb-wallet.png" alt="computer screen with web platform">
+          <h3 class="work-titles"><a class="work-links" href="/digital-wallet.html">Digital wallet →</a></h3>
         </div>
-        <div id="card-store-restock" class="work-card">
-          <div class="card-text">
-            <div class="card-container">
-              <h2 class="wc-title">Centralized Restocking Logistics</h2>
-              <p class="wc-text">Centralized logistics for seamless restocking</p>
-              <div class="caseTags">
-                <p class="wc-tags">Mobile</p>
-                <p class="wc-tags">Field Observation</p>
-                <p class="wc-tags">Prototype Testing</p>
-              </div>
-            </div>
-          </div>
-          <div class="card-img">
-            <img class="home-imag-card" src="/assets/home-card-3.png" alt="iphone screens with application">
-          </div>
+       </div>
+       <div class="work-line">
+        <div class="work-column" id="card-store-restock">
+          <img class="work-img" src="/assets/thumb-store.png" alt="computer screen with web platform">
+          <h3 class="work-titles"><a class="work-links" href="/store-management.html">Store management →</a></h3>
         </div>
-      </div>
+        <div class="work-column" id="card-workshop">
+          <img class="work-img" src="/assets/thumb-workshops.png" alt="">
+          <h3 class="work-titles"><a class="work-links" href="/workshops.html">Workshops & Design Sprints →</a></h3>
+        </div>
+       </div>
+    </div>
+    <div id="bottom-statement">
+      <h2 id="bt-statement-text" class="fade-in">I’m passionate about creating user-centered products that drive business success. If you're looking for a product designer who can bring fresh ideas and make an impact, let’s connect!</h2>
     </div>
   </main>
   <footer>
     <div class="container">
-      <div id="footer-content">
+      <div id="footer-content" class="fade-in">
         <div id="footer-text">
           <p id="ft-title">
-            coffee, creativity, & a conversation awaits!
+            Coffee in hand,<br>ideas on the table.
           </p>
           <p id="ft-text">
-            Let's connect and chat about opportunities.
+            Let's chat about opportunities.
           </p>
         </div>
         <div id="footer-contact">
@@ -107,7 +86,7 @@
           <a class="contact-text" href="https://www.linkedin.com/in/lanadandara/" target="_blank" rel="noopener noreferrer">/lanadandara</a>
         </div>
       </div>
-      <p id="contact">© Lana Dandara 2024</p>
+      <p id="contact">Made with ❤️ in Brazil | Copyright © 2024 Lana Dandara</p>
     </div>
   </footer>
 </body>
