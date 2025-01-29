@@ -17,3 +17,10 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(el);
   });
 });
+
+
+let scrollButton = document.getElementById('contact-button');
+
+  scrollButton.addEventListener('click', () => {
+    scrollToLastDiv();
+  });
