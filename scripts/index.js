@@ -4,7 +4,7 @@ let storeRestock = document.getElementById("card-store-restock");
 let workshop = document.getElementById("card-workshop");
 
 storeManagement.addEventListener("click", () => {
-  window.location.href = "/store-management.html"; 
+  window.location.href = "/user-biometry.html"; 
 });
 
 digitalWallet.addEventListener("click", () => {
@@ -12,7 +12,7 @@ digitalWallet.addEventListener("click", () => {
   });
 
 storeRestock.addEventListener("click", () => {
-    window.location.href = "/store-restock.html"; 
+    window.location.href = "/store-management.html"; 
   });
 
   workshop.addEventListener("click", () => {
