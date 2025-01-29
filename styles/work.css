@@ -1,22 +1,5 @@
 @import url("/styles/common.css");
 
-body > header {
-  background-color: var(--primary) !important;
-}
-
-.nav-list a {
-  color: var(--white);
-}
-#contact-button {
-  color: var(--white);
-}
-
-.nav-list a:hover,
-.nav-list a:focus, #contact-button:hover {
-  color: var(--secondary);
-  font-weight: 800;
-  text-decoration: overline;
-}
 
 
 
@@ -33,12 +16,10 @@ body > header {
 }
 
 .grey {
-  color: var(--secondary);
+  color: var(--grey2);
 }
 
-.center {
-  text-align: center;
-}
+
 
 .darkBlue {
   color: var(--secondary);
@@ -49,40 +30,42 @@ body > header {
 }
 
 .work-subtitle {
-  font-weight: 800;
+  font-weight: 400;
   font-size: 20px;
   padding-bottom: 10px;
 }
 
 .work-title {
   font-size: 40px;
-  font-weight: 800;
+  font-weight: 700;
   padding-bottom: 30px;
 }
 
 .work-text {
-  font-size: 16px;
-  line-height: 135%;
-  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4em;
+  font-weight: 300;
   padding-bottom: 30px;
 }
 
 /*HEADER*/
 
 .case-header {
-  background-color: var(--primary);
-  padding: 10% 0 5% 0;
+  padding: 5% 0;
 }
 
 .work-header-subtitle {
   text-transform: uppercase;
   font-size: 16px;
   padding-bottom: 30px;
+  color: var(--grey2);
 }
 
 .work-header-title {
-  font-size: 44px;
-  padding-bottom: 80px;
+  font-size: 54px;
+  padding-bottom: 40px;
+  font-weight: 700;
+  color: var(--black);
 }
 
 .header-text {
@@ -103,8 +86,7 @@ body > header {
 }
 
 .full-text {
-  max-width: 700px;
-  /*padding: 80px 0;*/
+  max-width: 940px;
   margin: 0 auto;
 }
 
@@ -120,15 +102,13 @@ body > header {
   padding-bottom: 80px;
 }
 
-.grey-full {
-  background-color: var(--grey);
-}
-.grey-half {
-  background-color: var(--grey);
+.span-black {
+  color: var(--black);
+  font-weight: 700;
 }
 
 .work-container {
-  max-width: 700px;
+  max-width: 940px;
   padding: 80px 0;
   margin: 0 auto;
 }
@@ -146,7 +126,6 @@ body > header {
 /*IMAGES*/
 .case-top-img {
   width: 100%;
-  height: 500px;
   object-fit: cover;
 }
 
@@ -183,26 +162,33 @@ figcaption {
 
 /*BACK TO TOP*/
 #back-to-top {
-  padding: 20px;
-  background-color: var(--secondary);
-  text-align: center;
+  padding: 0px 40px;
+  text-align: right;  
 }
 
 #scrollToTopText {
-  text-align: center;
-  text-decoration: none;
+  text-align: left;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .btt-text {
   color: var(--white);
   font-size: 16px;
-  font-weight: 400;
-  text-align: center;
+  font-weight: 700;
+  text-align: left;
+  text-decoration: none;
+  background-color: var(--black);
+  border-radius: 200px;
+  padding: 15px;
 }
 
 #scrollToTopText:hover {
-  color: var(--accent);
-  text-decoration: underline;
+  color: var(--grey);
+}
+
+footer {
+  border-top: 1px #F2F2F2 solid;
 }
 
 

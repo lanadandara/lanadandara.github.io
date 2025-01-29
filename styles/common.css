@@ -1,20 +1,23 @@
 /*PAGE*/
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
 
 :root {
-  --primary: #00BCD4;
-  --secondary: #2F3E46;
-  --darkblue: #00308F;
-  --accent: #FFD700;
-  --grey: #f2f2f2;
+  --primary: #082AC8;
+  --secondary: #6D7480;
+  --accent: #082AC8;
+  --grey: #666666;
+  --grey2: #777777;
   --text: #222222;
   --white: #ffffff;
+  --black:#212121;
 }
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
 }
 
 body {
@@ -23,8 +26,19 @@ body {
 
 .container {
   width: 100%;
-  max-width: 900px;
+  max-width: 940px;
   margin: 0 auto;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /*NAVBAR*/
@@ -46,24 +60,34 @@ nav {
   width: 126px;
 }
 
+#logo-text {
+  font-weight: 700;
+  color: var(--black);
+  text-decoration: none;
+  font-size: 20px;
+}
+
 .nav-list {
   float: right;
 }
 
 .nav-list li {
   display: inline-block;
-        font-size: 16px;
+        font-size: 20px;
         line-height: 100%;
         padding: 0 15px;
 }
 
 .nav-list a {
-  color: var(--secondary);
+  color: var(--grey);
   text-decoration: none;
+  font-weight: 500;
 }
 
 #contact-button {
-  color: var(--secondary);
+  color: var(--grey);
+  text-decoration: none;
+  font-weight: 500;
 }
 
 
@@ -71,14 +95,11 @@ nav {
 .nav-list a:hover,
 .nav-list a:focus, #contact-button:hover {
   color: var(--accent);
-  text-decoration: overline;
-  font-weight: 800;
   cursor: pointer;
 }
 
 .active {
-  color: var(--primary) !important;
-  font-weight: 800;
+  color: var(--accent) !important;
 }
 
 .nav-button {
@@ -87,7 +108,7 @@ nav {
   right: 20px;*/
   float: right;
   outline: none;
-  color: var(--secondary);
+  color: var(--black);
   background-color: var(--white);
   border: none;
   font-size: 16px;
@@ -97,7 +118,7 @@ nav {
 
 /*FOOTER*/
 footer {
-  background-color: var(--primary);
+  background-color: var(--white);
   padding-top: 120px;
 }
 
@@ -106,28 +127,33 @@ footer {
 }
 
 #ft-title {
-  font-weight: 800;
-  color: var(--white);
+  font-weight: 700;
+  color: var(--black);
   font-size: 44px;
   line-height: 115%;
+  padding-bottom: 10px;
 }
 
 #ft-text {
-  color: var(--secondary);
-  font-size: 36px;
+  color: var(--grey);
+  font-weight: 300;
+  font-size: 28px;
   line-height: 115%;
 }
 
 .contact-title {
   font-size: 16px;
   color: var(--white);
-  font-weight: 800;
+  font-weight: 300;
   padding-top: 30px;
+  
 }
 .contact-text {
   font-size: 18px;
   color: var(--secondary);
   text-decoration: none;
+  font-weight: 300;
+  
 }
 
 .contact-text:hover{
@@ -135,10 +161,10 @@ footer {
 }
 
 #contact {
-  color: var(--secondary);
-  font-size: 16px;
-  padding: 100px 0 20px 0;
-  text-align: right;
+  color: var(--grey);
+  font-size: 12px;
+  padding: 100px 0 30px 0;
+  text-align: center;
 }
 
 #footer-text {
@@ -174,7 +200,7 @@ footer {
 }
 
 @media (max-width:750px) {
-  .logo {
+  #logo-text {
     float: none;
     text-align: center;
     display: block;

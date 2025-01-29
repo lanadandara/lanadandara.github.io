@@ -11,40 +11,36 @@
 }
 
 #about-title {
-  color: var(--secondary);
+  color: var(--black);
   font-size: 40px;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 #about-subtitle {
-  color: var(--primary);
-  font-weight: 800;
+  color: var(--gray);
   font-size: 16px;
   line-height: 115%;
   padding-bottom: 15px;
 }
 
 .about-text {
-  color: var(--secondary);
+  color: var(--grey);
   font-size: 16px;
-  line-height: 135%;
+  line-height: 1.4em;
   padding-bottom: 40px;
 }
 
 .resume-button {
-  padding: 10px 20px;
-  background-color: var(--accent);
   border-radius: 50px;
-  color: var(--secondary);
-  font-weight: 800;
+  color: var(--black);
+  font-weight: 400;
   font-size: 20px;
   text-align: center;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .resume-button:hover {
-  background-color: var(--primary);
-  color: var(--white);
+  font-weight: 700;
 }
 
 .aboutImgDesk {
